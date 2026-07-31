@@ -1,0 +1,496 @@
+[
+ {
+  "slug": "croom-beatty",
+  "name": "Croom Beatty",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/croom_beatty-BIO.jpg",
+  "companies": [
+   {
+    "name": "Abacus",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/07/abacus.png",
+    "logo_local": "assets/logos/abacus.png"
+   },
+   {
+    "name": "Arch",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/11/arch-navy.png",
+    "logo_local": "assets/logos/arch-navy.png"
+   },
+   {
+    "name": "Finch",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/finch.png",
+    "logo_local": "assets/logos/finch.png"
+   },
+   {
+    "name": "NationGraph",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/02/nationgraph.svg",
+    "logo_local": "assets/logos/nationgraph.svg"
+   },
+   {
+    "name": "Numeric",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/10/numeric.png",
+    "logo_local": "assets/logos/numeric.png"
+   },
+   {
+    "name": "Prodigal",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/prodigal.png",
+    "logo_local": "assets/logos/prodigal.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/croom-beatty.jpg"
+ },
+ {
+  "slug": "shawn-carolan",
+  "name": "Shawn Carolan",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/09/shawn_carolan2-edited-lo.jpg",
+  "companies": [
+   {
+    "name": "Chime",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/chime.svg",
+    "logo_local": "assets/logos/chime.svg"
+   },
+   {
+    "name": "JUMP",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/jump_logo.png",
+    "logo_local": "assets/logos/jump_logo.png"
+   },
+   {
+    "name": "Monarch",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/monarch-2025.png",
+    "logo_local": "assets/logos/monarch-2025.png"
+   },
+   {
+    "name": "OpenSpace",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/openspace.png",
+    "logo_local": "assets/logos/openspace.png"
+   },
+   {
+    "name": "Roku",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/roku_logo.png",
+    "logo_local": "assets/logos/roku_logo.png"
+   },
+   {
+    "name": "Siri",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/siri-1.png",
+    "logo_local": "assets/logos/siri-1.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/shawn-carolan.jpg"
+ },
+ {
+  "slug": "deedy-das",
+  "name": "Deedy Das",
+  "headshot": "https://menlovc.com/wp-content/uploads/2024/03/deedy_das1-lo.jpg",
+  "companies": [
+   {
+    "name": "OpenRouter",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/openrouter2026.svg",
+    "logo_local": "assets/logos/openrouter2026.svg"
+   },
+   {
+    "name": "Goodfire",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/goodfire.svg",
+    "logo_local": "assets/logos/goodfire.svg"
+   },
+   {
+    "name": "Modal",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/05/modal.svg",
+    "logo_local": "assets/logos/modal.svg"
+   },
+   {
+    "name": "Wispr Flow",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/wispr_flow.svg",
+    "logo_local": "assets/logos/wispr_flow.svg"
+   },
+   {
+    "name": "Inception",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/11/inception_labs.png",
+    "logo_local": "assets/logos/inception_labs.png"
+   },
+   {
+    "name": "Ndea",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/05/ndea-inverse.svg",
+    "logo_local": "assets/logos/ndea-inverse.svg"
+   }
+  ],
+  "headshot_local": "assets/headshots/deedy-das.jpg"
+ },
+ {
+  "slug": "venky-ganesan",
+  "name": "Venky Ganesan",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/venky_ganesan-BIO.jpg",
+  "companies": [
+   {
+    "name": "Abnormal AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/abnormal_security.svg",
+    "logo_local": "assets/logos/abnormal_security.svg"
+   },
+   {
+    "name": "AVI Networks",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/avi.svg",
+    "logo_local": "assets/logos/avi.svg"
+   },
+   {
+    "name": "BitSight",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/bitsight-2.png",
+    "logo_local": "assets/logos/bitsight-2.png"
+   },
+   {
+    "name": "Poshmark",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/poshmark.png",
+    "logo_local": "assets/logos/poshmark.png"
+   },
+   {
+    "name": "Palo Alto Networks",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/palo_alto_networks.png",
+    "logo_local": "assets/logos/palo_alto_networks.png"
+   },
+   {
+    "name": "Redfin",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/redfin-e1668463965277.png",
+    "logo_local": "assets/logos/redfin-e1668463965277.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/venky-ganesan.jpg"
+ },
+ {
+  "slug": "matt-kraning",
+  "name": "Matt Kraning",
+  "headshot": "https://menlovc.com/wp-content/uploads/2025/04/matt_kraning4-lo.jpg",
+  "companies": [
+   {
+    "name": "Axiom",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/10/axiom.svg",
+    "logo_local": "assets/logos/axiom.svg"
+   },
+   {
+    "name": "Heaviside Industries",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/05/heaviside-black.png",
+    "logo_local": "assets/logos/heaviside-black.png"
+   },
+   {
+    "name": "Medra",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/07/medra.svg",
+    "logo_local": "assets/logos/medra.svg"
+   },
+   {
+    "name": "Peregrine",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/11/peregrine.svg",
+    "logo_local": "assets/logos/peregrine.svg"
+   },
+   {
+    "name": "Phylo",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/02/phylo.png",
+    "logo_local": "assets/logos/phylo.png"
+   },
+   {
+    "name": "RunSybil",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/03/runsybil.svg",
+    "logo_local": "assets/logos/runsybil.svg"
+   }
+  ],
+  "headshot_local": "assets/headshots/matt-kraning.jpg"
+ },
+ {
+  "slug": "amy-wu-martin",
+  "name": "Amy Wu Martin",
+  "headshot": "https://menlovc.com/wp-content/uploads/2023/06/amy_wu.jpg",
+  "companies": [
+   {
+    "name": "Alta",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/alta.svg",
+    "logo_local": "assets/logos/alta.svg"
+   },
+   {
+    "name": "Brain Jar Games",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/07/brain_jar_games.png",
+    "logo_local": "assets/logos/brain_jar_games.png"
+   },
+   {
+    "name": "Delphi",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/delphi.png",
+    "logo_local": "assets/logos/delphi.png"
+   },
+   {
+    "name": "Good Job Games",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/good_job_games-1024x300-1.png",
+    "logo_local": "assets/logos/good_job_games-1024x300-1.png"
+   },
+   {
+    "name": "Higgsfield",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/higgsfield.webp",
+    "logo_local": "assets/logos/higgsfield.webp"
+   },
+   {
+    "name": "ShopMy",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/01/shopmy_logo_primary.png",
+    "logo_local": "assets/logos/shopmy_logo_primary.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/amy-wu-martin.jpg"
+ },
+ {
+  "slug": "matt-murphy",
+  "name": "Matt Murphy",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/matt_murphy15-lo.jpg",
+  "companies": [
+   {
+    "name": "Anthropic",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/anthropic.svg",
+    "logo_local": "assets/logos/anthropic.svg"
+   },
+   {
+    "name": "Benchling",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/benchling.svg",
+    "logo_local": "assets/logos/benchling.svg"
+   },
+   {
+    "name": "Carta",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/Carta-Logo-200px.svg",
+    "logo_local": "assets/logos/Carta-Logo-200px.svg"
+   },
+   {
+    "name": "Harness",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/harness.png",
+    "logo_local": "assets/logos/harness.png"
+   },
+   {
+    "name": "Legora",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/03/legora.svg",
+    "logo_local": "assets/logos/legora.svg"
+   },
+   {
+    "name": "Lovable",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/12/lovable.svg",
+    "logo_local": "assets/logos/lovable.svg"
+   }
+  ],
+  "headshot_local": "assets/headshots/matt-murphy.jpg"
+ },
+ {
+  "slug": "joff-redfern",
+  "name": "Joff Redfern",
+  "headshot": "https://menlovc.com/wp-content/uploads/2023/09/joff_headshot-edit-scaled.jpg",
+  "companies": [
+   {
+    "name": "Atta",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/07/atta.png",
+    "logo_local": "assets/logos/atta.png"
+   },
+   {
+    "name": "Flapping Airplanes",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/02/flapping_airplanes.png",
+    "logo_local": "assets/logos/flapping_airplanes.png"
+   },
+   {
+    "name": "Lovable",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/12/lovable.svg",
+    "logo_local": "assets/logos/lovable.svg"
+   },
+   {
+    "name": "Mercor",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/mercor.png",
+    "logo_local": "assets/logos/mercor.png"
+   },
+   {
+    "name": "Okthx",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/02/okthx.svg",
+    "logo_local": "assets/logos/okthx.svg"
+   },
+   {
+    "name": "OpenHands AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/11/openhands.svg",
+    "logo_local": "assets/logos/openhands.svg"
+   }
+  ],
+  "headshot_local": "assets/headshots/joff-redfern.jpg"
+ },
+ {
+  "slug": "jp-sanday",
+  "name": "JP Sanday",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/jp_sanday-BIO.jpg",
+  "companies": [
+   {
+    "name": "Abnormal AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/abnormal_security.svg",
+    "logo_local": "assets/logos/abnormal_security.svg"
+   },
+   {
+    "name": "CodeSignal",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/codesignal-1.png",
+    "logo_local": "assets/logos/codesignal-1.png"
+   },
+   {
+    "name": "CollegeVine",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/12/collegevine.svg",
+    "logo_local": "assets/logos/collegevine.svg"
+   },
+   {
+    "name": "H1",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/h1-2.png",
+    "logo_local": "assets/logos/h1-2.png"
+   },
+   {
+    "name": "OfferFit",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/09/offerfit.png",
+    "logo_local": "assets/logos/offerfit.png"
+   },
+   {
+    "name": "Qualio",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/qualio.png",
+    "logo_local": "assets/logos/qualio.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/jp-sanday.jpg"
+ },
+ {
+  "slug": "rama-sekhar",
+  "name": "Rama Sekhar",
+  "headshot": "https://menlovc.com/wp-content/uploads/2024/01/rama_sekhar2-lo.jpg",
+  "companies": [
+   {
+    "name": "Astrix",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/astrix.png",
+    "logo_local": "assets/logos/astrix.png"
+   },
+   {
+    "name": "BeHeard",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/07/beheard.webp",
+    "logo_local": "assets/logos/beheard.webp"
+   },
+   {
+    "name": "Clerk",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/10/clerk.svg",
+    "logo_local": "assets/logos/clerk.svg"
+   },
+   {
+    "name": "Graphite",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/graphite-1.png.webp",
+    "logo_local": "assets/logos/graphite-1.png.webp"
+   },
+   {
+    "name": "Harness",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/harness.png",
+    "logo_local": "assets/logos/harness.png"
+   },
+   {
+    "name": "Zafran Security",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/11/zafran.svg",
+    "logo_local": "assets/logos/zafran.svg"
+   }
+  ],
+  "headshot_local": "assets/headshots/rama-sekhar.jpg"
+ },
+ {
+  "slug": "steve-sloane",
+  "name": "Steve Sloane",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/steve_sloane-BIO.jpg",
+  "companies": [
+   {
+    "name": "6 River Systems",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/6_river.png",
+    "logo_local": "assets/logos/6_river.png"
+   },
+   {
+    "name": "Chime",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/chime.svg",
+    "logo_local": "assets/logos/chime.svg"
+   },
+   {
+    "name": "CloudTrucks",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/cloudtrucks.png",
+    "logo_local": "assets/logos/cloudtrucks.png"
+   },
+   {
+    "name": "Eleos Health",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/09/eleos.png",
+    "logo_local": "assets/logos/eleos.png"
+   },
+   {
+    "name": "Enable",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/enable.svg",
+    "logo_local": "assets/logos/enable.svg"
+   },
+   {
+    "name": "Observe.AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/observe-ai.png",
+    "logo_local": "assets/logos/observe-ai.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/steve-sloane.jpg"
+ },
+ {
+  "slug": "tim-tully",
+  "name": "Tim Tully",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/tim_tully3_2023-lo.jpg",
+  "companies": [
+   {
+    "name": "Eve",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/eve.svg",
+    "logo_local": "assets/logos/eve.svg"
+   },
+   {
+    "name": "Fleet AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/03/fleet.svg",
+    "logo_local": "assets/logos/fleet.svg"
+   },
+   {
+    "name": "Gimlet Labs",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/03/gimlet_labs.png",
+    "logo_local": "assets/logos/gimlet_labs.png"
+   },
+   {
+    "name": "Inception",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/11/inception_labs.png",
+    "logo_local": "assets/logos/inception_labs.png"
+   },
+   {
+    "name": "Neon",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/07/neon.svg",
+    "logo_local": "assets/logos/neon.svg"
+   },
+   {
+    "name": "Pinecone",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/pinecone.png",
+    "logo_local": "assets/logos/pinecone.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/tim-tully.jpg"
+ },
+ {
+  "slug": "greg-yap",
+  "name": "Greg Yap",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/greg_yap-BIO.jpg",
+  "companies": [
+   {
+    "name": "Benchling",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/benchling.svg",
+    "logo_local": "assets/logos/benchling.svg"
+   },
+   {
+    "name": "Cartwheel",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/09/cartwheel.png",
+    "logo_local": "assets/logos/cartwheel.png"
+   },
+   {
+    "name": "Delfi Diagnostics",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/delfi.png",
+    "logo_local": "assets/logos/delfi.png"
+   },
+   {
+    "name": "Encoded Therapeutics",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/encoded.png",
+    "logo_local": "assets/logos/encoded.png"
+   },
+   {
+    "name": "Genesis Molecular AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/genesis_molecular_ai.png",
+    "logo_local": "assets/logos/genesis_molecular_ai.png"
+   },
+   {
+    "name": "H1",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/h1-2.png",
+    "logo_local": "assets/logos/h1-2.png"
+   }
+  ],
+  "headshot_local": "assets/headshots/greg-yap.jpg"
+ }
+]

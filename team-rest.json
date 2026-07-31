@@ -1,0 +1,427 @@
+[
+ {
+  "slug": "sam-borja",
+  "name": "Sam Borja",
+  "category": "investors",
+  "title": "Investor",
+  "headshot": "https://menlovc.com/wp-content/uploads/2023/10/sam_borja2-lo.jpg",
+  "companies": [
+   {
+    "name": "Abnormal AI",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/abnormal_security.svg",
+    "logo_local": "assets/logos/abnormal_security.svg"
+   },
+   {
+    "name": "Astrix",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/astrix.png",
+    "logo_local": "assets/logos/astrix.png"
+   },
+   {
+    "name": "Clerk",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/10/clerk.svg",
+    "logo_local": "assets/logos/clerk.svg"
+   },
+   {
+    "name": "Lovable",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/12/lovable.svg",
+    "logo_local": "assets/logos/lovable.svg"
+   },
+   {
+    "name": "Numeric",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/10/numeric.png",
+    "logo_local": "assets/logos/numeric.png"
+   },
+   {
+    "name": "Solace",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/solace.svg",
+    "logo_local": "assets/logos/solace.svg"
+   }
+  ]
+ },
+ {
+  "slug": "ishika-chawla",
+  "name": "Ishika Chawla",
+  "category": "investors",
+  "title": "Investor",
+  "headshot": "https://menlovc.com/wp-content/uploads/2024/08/ishika_chawla_main_headshot-edited-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "sabrina-lu",
+  "name": "Sabrina Lu",
+  "category": "investors",
+  "title": "Investor",
+  "headshot": "https://menlovc.com/wp-content/uploads/2025/09/sabrina_lu1-lo-e1758671656387.jpg",
+  "companies": []
+ },
+ {
+  "slug": "cc-gong",
+  "name": "C.C. Gong",
+  "category": "investors",
+  "title": "Principal",
+  "headshot": "https://menlovc.com/wp-content/uploads/2024/06/cc_gong4-lo.jpg",
+  "companies": [
+   {
+    "name": "Alta",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/alta.svg",
+    "logo_local": "assets/logos/alta.svg"
+   },
+   {
+    "name": "Axiom",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/10/axiom.svg",
+    "logo_local": "assets/logos/axiom.svg"
+   },
+   {
+    "name": "Delphi",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/delphi.png",
+    "logo_local": "assets/logos/delphi.png"
+   },
+   {
+    "name": "Good Job Games",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/good_job_games-1024x300-1.png",
+    "logo_local": "assets/logos/good_job_games-1024x300-1.png"
+   },
+   {
+    "name": "Graphite",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/04/graphite-1.png.webp",
+    "logo_local": "assets/logos/graphite-1.png.webp"
+   },
+   {
+    "name": "ShopMy",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/01/shopmy_logo_primary.png",
+    "logo_local": "assets/logos/shopmy_logo_primary.png"
+   }
+  ]
+ },
+ {
+  "slug": "ryan-hand",
+  "name": "Ryan Hand",
+  "category": "investors",
+  "title": "Principal",
+  "headshot": "https://menlovc.com/wp-content/uploads/2023/10/ryan_hand-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "johnny-hu",
+  "name": "Johnny Hu, Ph.D.",
+  "category": "investors",
+  "title": "Principal",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/johnny_hu-BIO.jpg",
+  "companies": [
+   {
+    "name": "Bluenote",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/08/bluenote.png",
+    "logo_local": "assets/logos/bluenote.png"
+   },
+   {
+    "name": "Opna Bio",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/12/opna_bio.png",
+    "logo_local": "assets/logos/opna_bio.png"
+   },
+   {
+    "name": "Vilya",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/vilya.png",
+    "logo_local": "assets/logos/vilya.png"
+   },
+   {
+    "name": "Xaira Therapeutics",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/xaira_black.png",
+    "logo_local": "assets/logos/xaira_black.png"
+   }
+  ]
+ },
+ {
+  "slug": "derek-xiao",
+  "name": "Derek Xiao",
+  "category": "investors",
+  "title": "Principal",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/derek_xiao-BIO.jpeg",
+  "companies": [
+   {
+    "name": "Anthropic",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/anthropic.svg",
+    "logo_local": "assets/logos/anthropic.svg"
+   },
+   {
+    "name": "Assort Health",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/06/assort_health-mixed.png",
+    "logo_local": "assets/logos/assort_health-mixed.png"
+   },
+   {
+    "name": "Eve",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/eve.svg",
+    "logo_local": "assets/logos/eve.svg"
+   },
+   {
+    "name": "Fireworks",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/07/fireworks.svg",
+    "logo_local": "assets/logos/fireworks.svg"
+   },
+   {
+    "name": "Gimlet Labs",
+    "logo": "https://menlovc.com/wp-content/uploads/2026/03/gimlet_labs.png",
+    "logo_local": "assets/logos/gimlet_labs.png"
+   },
+   {
+    "name": "Mercor",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/mercor.png",
+    "logo_local": "assets/logos/mercor.png"
+   }
+  ]
+ },
+ {
+  "slug": "bryan-eglan",
+  "name": "Bryan Eglan",
+  "category": "platform",
+  "title": "Director of Business Development",
+  "headshot": "https://menlovc.com/wp-content/uploads/2023/08/bryan_eglan3-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "kandace-elam",
+  "name": "Kandace Elam",
+  "category": "platform",
+  "title": "Vice President of GTM Talent",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/kandace_elam-cropped-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "houman-haghighi",
+  "name": "Houman Haghighi",
+  "category": "platform",
+  "title": "Partner, Business & Corporate Development",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/houman_haghighi-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "kayla-hinderscheid",
+  "name": "Kayla Hinderscheid",
+  "category": "platform",
+  "title": "Head of Network Development",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/kayla_hinderscheid-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "jordan-ormont",
+  "name": "Jordan Ormont",
+  "category": "platform",
+  "title": "Partner, Talent",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/jordan_ormont-BIO.jpg",
+  "companies": []
+ },
+ {
+  "slug": "tiffany-spencer",
+  "name": "Tiffany Spencer",
+  "category": "platform",
+  "title": "Head of Marketing",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/tiffany_spencer2-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "darcy-yee",
+  "name": "Darcy Yee",
+  "category": "platform",
+  "title": "Marketing and Communications",
+  "headshot": "https://menlovc.com/wp-content/uploads/2025/09/darcy_yee3-cropped-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "deborah-carrillo",
+  "name": "Deborah Carrillo",
+  "category": "operations",
+  "title": "Partner + General Counsel",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/deborah_carrillo1-lo.jpg",
+  "companies": []
+ },
+ {
+  "slug": "brent-fellows",
+  "name": "Brent Fellows",
+  "category": "operations",
+  "title": "Vice President, Finance and Tax",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/brent_fellows-BIO-scaled.jpg",
+  "companies": []
+ },
+ {
+  "slug": "kirsten-mello",
+  "name": "Kirsten Mello",
+  "category": "operations",
+  "title": "Partner + Chief Financial Officer",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/kirsten_mello-BIO.jpg",
+  "companies": []
+ },
+ {
+  "slug": "doug-carlisle",
+  "name": "Doug Carlisle",
+  "category": "advisors",
+  "title": "Partner Emeritus",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/09/doug_carlisle-BIO.jpg",
+  "companies": []
+ },
+ {
+  "slug": "naomi-pilosof-ionita",
+  "name": "Naomi Pilosof Ionita",
+  "category": "advisors",
+  "title": "Board Partner",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/naomi_ionita.jpg",
+  "companies": [
+   {
+    "name": "Orb",
+    "logo": "https://menlovc.com/wp-content/uploads/2024/04/orb.svg",
+    "logo_local": "assets/logos/orb.svg"
+   },
+   {
+    "name": "Endgame",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/endgame.png",
+    "logo_local": "assets/logos/endgame.png"
+   },
+   {
+    "name": "Eppo",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/eppo.svg",
+    "logo_local": "assets/logos/eppo.svg"
+   },
+   {
+    "name": "Fleetsmith",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/fleetsmith.png",
+    "logo_local": "assets/logos/fleetsmith.png"
+   },
+   {
+    "name": "Matik",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/matik.png",
+    "logo_local": "assets/logos/matik.png"
+   },
+   {
+    "name": "Swantide",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/12/swantide.svg",
+    "logo_local": "assets/logos/swantide.svg"
+   }
+  ]
+ },
+ {
+  "slug": "john-jarve",
+  "name": "John Jarve",
+  "category": "advisors",
+  "title": "Partner Emeritus",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/09/john_jarve-BIO-scaled.jpg",
+  "companies": []
+ },
+ {
+  "slug": "h-dubose-montgomery",
+  "name": "H. DuBose Montgomery",
+  "category": "advisors",
+  "title": "Founder & Partner Emeritus",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/09/dubose_montgomery-BIO.jpg",
+  "companies": []
+ },
+ {
+  "slug": "greg-rudin",
+  "name": "Greg Rudin",
+  "category": "advisors",
+  "title": "Board Partner",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/greg_rudin-BIO.jpg",
+  "companies": [
+   {
+    "name": "Alcove",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/10/alcove.png",
+    "logo_local": "assets/logos/alcove.png"
+   },
+   {
+    "name": "Assemble Labs",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/07/assemble_labs.png",
+    "logo_local": "assets/logos/assemble_labs.png"
+   },
+   {
+    "name": "Atta",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/07/atta.png",
+    "logo_local": "assets/logos/atta.png"
+   },
+   {
+    "name": "NegotiateAI",
+    "logo": "https://menlovc.com/wp-content/uploads/2025/06/negotiateai-2-scaled.png",
+    "logo_local": "assets/logos/negotiateai-2-scaled.png"
+   },
+   {
+    "name": "WorkUp",
+    "logo": "https://menlovc.com/wp-content/uploads/2023/05/workup.png",
+    "logo_local": "assets/logos/workup.png"
+   }
+  ]
+ },
+ {
+  "slug": "mark-siegel",
+  "name": "Mark Siegel",
+  "category": "advisors",
+  "title": "Partner Emeritus",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/mark_siegel-lo.jpg",
+  "companies": [
+   {
+    "name": "3PAR",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/3par-horizontal.svg",
+    "logo_local": "assets/logos/3par-horizontal.svg"
+   },
+   {
+    "name": "Cofactor Genomics",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/cofactor_genomics.png",
+    "logo_local": "assets/logos/cofactor_genomics.png"
+   },
+   {
+    "name": "Dropcam",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/dropcam.svg",
+    "logo_local": "assets/logos/dropcam.svg"
+   },
+   {
+    "name": "eero",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/eero.svg",
+    "logo_local": "assets/logos/eero.svg"
+   },
+   {
+    "name": "Recursion",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/recursion-1.png",
+    "logo_local": "assets/logos/recursion-1.png"
+   },
+   {
+    "name": "RightHand Robotics",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/righthandrobotics.svg",
+    "logo_local": "assets/logos/righthandrobotics.svg"
+   }
+  ]
+ },
+ {
+  "slug": "tyler-sosin",
+  "name": "Tyler Sosin",
+  "category": "advisors",
+  "title": "Board Partner",
+  "headshot": "https://menlovc.com/wp-content/uploads/2022/08/tyler_sosin-lo.jpg",
+  "companies": [
+   {
+    "name": "Affinity",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/affinity-1.png",
+    "logo_local": "assets/logos/affinity-1.png"
+   },
+   {
+    "name": "Bluevine",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/bluevine.svg",
+    "logo_local": "assets/logos/bluevine.svg"
+   },
+   {
+    "name": "Bread",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/bread-1.png",
+    "logo_local": "assets/logos/bread-1.png"
+   },
+   {
+    "name": "Carta",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/Carta-Logo-200px.svg",
+    "logo_local": "assets/logos/Carta-Logo-200px.svg"
+   },
+   {
+    "name": "Everlaw",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/everlaw.svg",
+    "logo_local": "assets/logos/everlaw.svg"
+   },
+   {
+    "name": "Indio",
+    "logo": "https://menlovc.com/wp-content/uploads/2022/08/indio.svg",
+    "logo_local": "assets/logos/indio.svg"
+   }
+  ]
+ }
+]
