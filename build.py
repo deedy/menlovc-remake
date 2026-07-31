@@ -388,7 +388,7 @@ page = f'''<!doctype html>
   <header class="hero">
     <img class="wordmark" src="assets/menlo-logo.png" alt="Menlo Ventures">
     <p class="eyebrow est">Est. 1976</p>
-    <p class="eyebrow cities">Menlo Park, California &nbsp;&middot;&nbsp; San Francisco, California</p>
+    <p class="eyebrow cities">Menlo Park &nbsp;&middot;&nbsp; San Francisco</p>
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
