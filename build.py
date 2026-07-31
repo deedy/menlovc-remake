@@ -356,7 +356,7 @@ page = f'''<!doctype html>
   @media (max-width: 640px) {{
     .grid {{
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 20px;
+      column-gap: 24px;
       row-gap: 30px;
     }}
     .partners {{ padding: 0 16px 70px; }}
@@ -372,6 +372,7 @@ page = f'''<!doctype html>
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8px 12px;
+      padding: 0 10px;
     }}
     .investments img {{ max-height: 9px; }}
   }}
