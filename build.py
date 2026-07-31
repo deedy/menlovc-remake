@@ -133,13 +133,14 @@ page = f'''<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Menlo Ventures — The Team</title>
 <meta name="description" content="Menlo Ventures. Venture capital since 1976. The team and the companies they back.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' text-anchor='middle' fill='black'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' text-anchor='middle' fill='%23FF8304'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {{
     --ink: #0a0a0a;
+    --accent: #FF8304;
     --paper: #ffffff;
     --hairline: rgba(10, 10, 10, 0.18);
     --faint: rgba(10, 10, 10, 0.55);
@@ -148,6 +149,10 @@ page = f'''<!doctype html>
   }}
 
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+
+  ::selection {{ background: var(--accent); color: #fff; }}
+
+  :focus-visible {{ outline: 2px solid var(--accent); outline-offset: 3px; }}
 
   html {{ scroll-behavior: smooth; }}
 
@@ -211,6 +216,8 @@ page = f'''<!doctype html>
     margin-top: 9px;
   }}
 
+  .dot {{ color: var(--accent); }}
+
   /* ---------- category tabs ---------- */
   .tabs {{
     display: flex;
@@ -239,7 +246,7 @@ page = f'''<!doctype html>
   .tab:hover {{ color: var(--ink); }}
   .tab.is-active {{
     color: var(--ink);
-    border-bottom-color: var(--ink);
+    border-bottom-color: var(--accent);
   }}
   .tab-short {{ display: none; }}
 
@@ -315,7 +322,9 @@ page = f'''<!doctype html>
     color: var(--faint);
     margin-top: 5px;
     text-align: center;
+    transition: color 0.5s ease;
   }}
+  .partner:hover .role {{ color: var(--accent); }}
 
   .investments {{
     list-style: none;
@@ -388,7 +397,7 @@ page = f'''<!doctype html>
   <header class="hero">
     <img class="wordmark" src="assets/menlo-logo.png" alt="Menlo Ventures">
     <p class="eyebrow est">Est. 1976</p>
-    <p class="eyebrow cities">Menlo Park &nbsp;&middot;&nbsp; San Francisco</p>
+    <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
   </header>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
