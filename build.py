@@ -352,7 +352,9 @@ page = f'''<!doctype html>
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }}
+  .investments li:hover {{ z-index: 5; }}
   .investments img {{
     display: block;
     width: auto;
@@ -362,9 +364,13 @@ page = f'''<!doctype html>
     object-fit: contain;
     filter: brightness(0);
     opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+    will-change: transform;
   }}
-  .investments li:hover img {{ opacity: 1; }}
+  .investments li:hover img {{
+    opacity: 1;
+    transform: scale(2.2);
+  }}
 
   /* grid shows 3 columns from ~770px up; center lone cards there */
   @media (min-width: 770px) {{
