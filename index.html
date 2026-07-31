@@ -110,8 +110,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
-    padding-bottom: 16px;
+    height: 60px;
+    padding-bottom: 24px;
     text-decoration: none;
   }
   .folio-grid img {
@@ -131,7 +131,7 @@
   }
   .folio-round {
     position: absolute;
-    bottom: 4px;
+    bottom: 12px;
     left: 0;
     right: 0;
     text-align: center;
@@ -149,6 +149,32 @@
   .folio-grid a:hover .folio-round {
     opacity: 1;
     transform: none;
+  }
+  .folio-val {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s;
+  }
+  .folio-grid a:hover .folio-val {
+    opacity: 1;
+    transform: none;
+  }
+  .pub {
+    color: var(--accent);
+    font-size: 5px;
+    vertical-align: 2px;
   }
 
   /* ---------- category tabs ---------- */
@@ -317,6 +343,7 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 4px 20px;
     }
+    .folio-grid li.desktop-only { display: none; }
     .folio-grid a { height: 50px; }
     .folio-grid img { max-height: 15px; }
     .folio-round { font-size: 6px; letter-spacing: 0.18em; }
@@ -376,6 +403,22 @@
       <li><a href="https://www.uber.com" target="_blank" rel="noopener">
         <img src="assets/logos/uber.png" alt="Uber" loading="lazy">
         <span class="folio-round">Led the B</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://mercor.com" target="_blank" rel="noopener">
+        <img src="assets/logos/mercor.png" alt="Mercor" loading="lazy">
+        <span class="folio-round">Partnered at B</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://www.chaidiscovery.com" target="_blank" rel="noopener">
+        <img src="assets/logos/chai_discovery.svg" alt="Chai Discovery" loading="lazy">
+        <span class="folio-round">Led the A</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://www.databricks.com" target="_blank" rel="noopener">
+        <img src="assets/logos/databricks.png" alt="Databricks" loading="lazy">
+        <span class="folio-round">Sold Neon</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://cursor.com" target="_blank" rel="noopener">
+        <img src="assets/logos/cursor.svg" alt="Cursor" loading="lazy">
+        <span class="folio-round">Sold Graphite</span>
       </a></li>
     </ul>
   </section>

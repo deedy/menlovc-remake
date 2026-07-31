@@ -113,26 +113,42 @@ for key, label in CATEGORIES:
     grids.append(f'    <div class="grid{layout}{hidden}" data-cat="{key}">\n{cards_html}\n    </div>')
 grids_html = '\n'.join(grids)
 
-# hero logo grid: (name, logo file, round note, website)
+# hero logo grid: (name, logo file, round note, website, valuation, is_public, desktop_only)
+# valuations render ONLY into local.html (gitignored) — never into the deployed index.html
 FOLIO = [
-    ('Anthropic', 'anthropic.svg', 'Partnered at C, Led the D', 'https://www.anthropic.com'),
-    ('OpenRouter', 'openrouter2026.svg', 'Partnered at Seed, Led the A', 'https://openrouter.ai'),
-    ('Lovable', 'lovable.svg', 'Led the B', 'https://lovable.dev'),
-    ('Suno', 'suno.svg', 'Led the C', 'https://suno.com'),
-    ('Wispr Flow', 'wispr_flow.svg', 'Led the Seed, A', 'https://wisprflow.ai'),
-    ('Higgsfield', 'higgsfield.webp', 'Led the Seed', 'https://higgsfield.ai'),
-    ('Gimlet', 'gimlet_labs.png', 'Led the A', 'https://gimletlabs.ai'),
-    ('Uber', 'uber.png', 'Led the B', 'https://www.uber.com'),
+    ('Anthropic', 'anthropic.svg', 'Partnered at C, Led the D', 'https://www.anthropic.com', '$965B', False, False),
+    ('OpenRouter', 'openrouter2026.svg', 'Partnered at Seed, Led the A', 'https://openrouter.ai', 'Acq. by Stripe at $8B', False, False),
+    ('Lovable', 'lovable.svg', 'Led the B', 'https://lovable.dev', '$13B', False, False),
+    ('Suno', 'suno.svg', 'Led the C', 'https://suno.com', '$5.4B', False, False),
+    ('Wispr Flow', 'wispr_flow.svg', 'Led the Seed, A', 'https://wisprflow.ai', '$2B', False, False),
+    ('Higgsfield', 'higgsfield.webp', 'Led the Seed', 'https://higgsfield.ai', '$5B', False, False),
+    ('Gimlet', 'gimlet_labs.png', 'Led the A', 'https://gimletlabs.ai', '$3.5B', False, False),
+    ('Uber', 'uber.png', 'Led the B', 'https://www.uber.com', '$100B+', True, False),
+    ('Mercor', 'mercor.png', 'Partnered at B', 'https://mercor.com', '$20B', False, True),
+    ('Chai Discovery', 'chai_discovery.svg', 'Led the A', 'https://www.chaidiscovery.com', '$3.8B', False, True),
+    ('Databricks', 'databricks.png', 'Sold Neon', 'https://www.databricks.com', '$1B', False, True),
+    ('Cursor', 'cursor.svg', 'Sold Graphite', 'https://cursor.com', '~$1B', False, True),
 ]
 
-folio_items = []
-for name, logo, note, url in FOLIO:
-    note_html = html.escape(note).replace(', ', ' <span class="dot">&middot;</span> ')
-    folio_items.append(f'''      <li><a href="{url}" target="_blank" rel="noopener">
+
+def folio_grid(with_valuations):
+    items = []
+    for name, logo, note, url, val, is_public, desktop_only in FOLIO:
+        note_html = html.escape(note).replace(', ', ' <span class="dot">&middot;</span> ')
+        val_html = ''
+        if with_valuations and val:
+            pub = ' <sup class="pub" title="Public company">&#9650;</sup>' if is_public else ''
+            val_html = f'\n        <span class="folio-val">{html.escape(val)}{pub}</span>'
+        cls = ' class="desktop-only"' if desktop_only else ''
+        items.append(f'''      <li{cls}><a href="{url}" target="_blank" rel="noopener">
         <img src="assets/logos/{logo}" alt="{html.escape(name)}" loading="lazy">
-        <span class="folio-round">{note_html}</span>
+        <span class="folio-round">{note_html}</span>{val_html}
       </a></li>''')
-folio_html = '\n'.join(folio_items)
+    return '\n'.join(items)
+
+
+folio_html = folio_grid(with_valuations=False)
+folio_html_local = folio_grid(with_valuations=True)
 
 SHORT_LABELS = {'operations': 'Ops'}  # compact label used on narrow screens
 
@@ -259,8 +275,8 @@ page = f'''<!doctype html>
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
-    padding-bottom: 16px;
+    height: 60px;
+    padding-bottom: 24px;
     text-decoration: none;
   }}
   .folio-grid img {{
@@ -280,7 +296,7 @@ page = f'''<!doctype html>
   }}
   .folio-round {{
     position: absolute;
-    bottom: 4px;
+    bottom: 12px;
     left: 0;
     right: 0;
     text-align: center;
@@ -298,6 +314,32 @@ page = f'''<!doctype html>
   .folio-grid a:hover .folio-round {{
     opacity: 1;
     transform: none;
+  }}
+  .folio-val {{
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: opacity 0.35s ease 0.05s, transform 0.35s ease 0.05s;
+  }}
+  .folio-grid a:hover .folio-val {{
+    opacity: 1;
+    transform: none;
+  }}
+  .pub {{
+    color: var(--accent);
+    font-size: 5px;
+    vertical-align: 2px;
   }}
 
   /* ---------- category tabs ---------- */
@@ -466,6 +508,7 @@ page = f'''<!doctype html>
       grid-template-columns: repeat(2, 1fr);
       gap: 4px 20px;
     }}
+    .folio-grid li.desktop-only {{ display: none; }}
     .folio-grid a {{ height: 50px; }}
     .folio-grid img {{ max-height: 15px; }}
     .folio-round {{ font-size: 6px; letter-spacing: 0.18em; }}
@@ -526,6 +569,8 @@ page = f'''<!doctype html>
 '''
 
 open('index.html', 'w').write(page)
+# local.html (gitignored): same page with valuations rendered into the folio grid
+open('local.html', 'w').write(page.replace(folio_html, folio_html_local))
 total = sum(len(v) for v in by_cat.values())
-print(f'index.html written — {total} people: ' +
+print(f'index.html + local.html written — {total} people: ' +
       ', '.join(f'{label} {len(by_cat[key])}' for key, label in CATEGORIES))
