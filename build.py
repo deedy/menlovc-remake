@@ -164,7 +164,7 @@ page = f'''<!doctype html>
 
   .eyebrow {{
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 500;
     letter-spacing: 0.32em;
     text-transform: uppercase;
@@ -176,7 +176,7 @@ page = f'''<!doctype html>
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 24px 40px;
+    padding: 48px 18px 30px;
     text-align: center;
   }}
 
@@ -189,18 +189,18 @@ page = f'''<!doctype html>
   .hero > :nth-child(3) {{ animation-delay: 0.40s; }}
 
   .wordmark {{
-    width: min(340px, 72vw);
+    width: min(255px, 54vw);
     height: auto;
     display: block;
   }}
 
   .est {{
-    margin-top: 26px;
+    margin-top: 20px;
     color: var(--ink);
   }}
 
   .cities {{
-    margin-top: 12px;
+    margin-top: 9px;
   }}
 
   /* ---------- category tabs ---------- */
@@ -208,8 +208,8 @@ page = f'''<!doctype html>
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px 34px;
-    padding: 8px 24px 40px;
+    gap: 10px 25px;
+    padding: 6px 18px 30px;
     opacity: 0;
     animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
   }}
@@ -219,7 +219,7 @@ page = f'''<!doctype html>
     border: none;
     cursor: pointer;
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 500;
     letter-spacing: 0.28em;
     text-transform: uppercase;
@@ -241,16 +241,16 @@ page = f'''<!doctype html>
 
   /* ---------- team grid ---------- */
   .partners {{
-    max-width: 1240px;
+    max-width: 930px;
     margin: 0 auto;
-    padding: 0 32px 120px;
+    padding: 0 24px 90px;
   }}
 
   .grid {{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    column-gap: 56px;
-    row-gap: 48px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    column-gap: 42px;
+    row-gap: 36px;
   }}
   .grid.is-hidden {{ display: none; }}
 
@@ -289,22 +289,22 @@ page = f'''<!doctype html>
   .partner:hover .portrait img.alt {{ opacity: 1; }}
 
   .name {{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.01em;
-    margin-top: 14px;
+    margin-top: 10px;
     line-height: 1.1;
     text-align: center;
   }}
 
   .role {{
     font-family: var(--mono);
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
     letter-spacing: 0.32em;
     text-transform: uppercase;
     color: var(--faint);
-    margin-top: 7px;
+    margin-top: 5px;
     text-align: center;
   }}
 
@@ -313,9 +313,9 @@ page = f'''<!doctype html>
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 14px;
-    margin-top: 16px;
-    min-height: 22px;
+    gap: 10px;
+    margin-top: 12px;
+    min-height: 16px;
   }}
   .investments li {{
     flex: 1 1 0;
@@ -328,7 +328,7 @@ page = f'''<!doctype html>
     display: block;
     width: auto;
     height: auto;
-    max-height: 14px;
+    max-height: 10px;
     max-width: 100%;
     object-fit: contain;
     filter: brightness(0);
@@ -337,17 +337,22 @@ page = f'''<!doctype html>
   }}
   .investments li:hover img {{ opacity: 1; }}
 
-  /* grid shows 3 columns from ~1017px up; center lone cards there */
-  @media (min-width: 1017px) {{
+  /* grid shows 3 columns from ~770px up; center lone cards there */
+  @media (min-width: 770px) {{
     .grid.center-last > .partner:last-child {{ grid-column: 2; }}
     .grid.first-center > .partner:first-child {{ grid-column: 2; }}
     .grid.first-center > .partner:nth-child(2) {{ grid-column: 1; }}
   }}
 
   @media (max-width: 640px) {{
-    .grid {{ row-gap: 44px; }}
-    .partners {{ padding: 0 20px 100px; }}
-    .name {{ font-size: 26px; }}
+    .grid {{
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 30px;
+    }}
+    .partners {{ padding: 0 16px 70px; }}
+    .name {{ font-size: 17px; }}
+    .investments img {{ max-height: 8px; }}
   }}
 
   @media (prefers-reduced-motion: reduce) {{
