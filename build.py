@@ -113,6 +113,27 @@ for key, label in CATEGORIES:
     grids.append(f'    <div class="grid{layout}{hidden}" data-cat="{key}">\n{cards_html}\n    </div>')
 grids_html = '\n'.join(grids)
 
+# hero logo grid: (name, logo file, round note, website)
+FOLIO = [
+    ('Anthropic', 'anthropic.svg', 'Partnered at C, Led the D', 'https://www.anthropic.com'),
+    ('OpenRouter', 'openrouter2026.svg', 'Partnered at Seed, Led the A', 'https://openrouter.ai'),
+    ('Lovable', 'lovable.svg', 'Led the B', 'https://lovable.dev'),
+    ('Suno', 'suno.svg', 'Led the C', 'https://suno.com'),
+    ('Wispr Flow', 'wispr_flow.svg', 'Led the Seed, A', 'https://wisprflow.ai'),
+    ('Higgsfield', 'higgsfield.webp', 'Led the Seed', 'https://higgsfield.ai'),
+    ('Gimlet', 'gimlet_labs.png', 'Led the A', 'https://gimletlabs.ai'),
+    ('Uber', 'uber.png', 'Led the B', 'https://www.uber.com'),
+]
+
+folio_items = []
+for name, logo, note, url in FOLIO:
+    note_html = html.escape(note).replace(', ', ' <span class="dot">&middot;</span> ')
+    folio_items.append(f'''      <li><a href="{url}" target="_blank" rel="noopener">
+        <img src="assets/logos/{logo}" alt="{html.escape(name)}" loading="lazy">
+        <span class="folio-round">{note_html}</span>
+      </a></li>''')
+folio_html = '\n'.join(folio_items)
+
 SHORT_LABELS = {'operations': 'Ops'}  # compact label used on narrow screens
 
 def tab_label(key, label):
@@ -218,6 +239,67 @@ page = f'''<!doctype html>
 
   .dot {{ color: var(--accent); }}
 
+  /* ---------- hero logo grid ---------- */
+  .folio {{
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4px 24px 30px;
+    opacity: 0;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+  }}
+  .folio-grid {{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 36px;
+  }}
+  .folio-grid li {{ min-width: 0; }}
+  .folio-grid a {{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding-bottom: 16px;
+    text-decoration: none;
+  }}
+  .folio-grid img {{
+    max-height: 17px;
+    max-width: 82%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0);
+    opacity: 0.55;
+    transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+  }}
+  .folio-grid a:hover img {{
+    filter: none;
+    opacity: 1;
+    transform: translateY(-3px);
+  }}
+  .folio-round {{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--faint);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }}
+  .folio-grid a:hover .folio-round {{
+    opacity: 1;
+    transform: none;
+  }}
+
   /* ---------- category tabs ---------- */
   .tabs {{
     display: flex;
@@ -226,7 +308,7 @@ page = f'''<!doctype html>
     gap: 10px 25px;
     padding: 6px 18px 30px;
     opacity: 0;
-    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.6s forwards;
   }}
   .tab {{
     appearance: none;
@@ -380,6 +462,13 @@ page = f'''<!doctype html>
     }}
     .tab-full {{ display: none; }}
     .tab-short {{ display: inline; }}
+    .folio-grid {{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 20px;
+    }}
+    .folio-grid a {{ height: 50px; }}
+    .folio-grid img {{ max-height: 15px; }}
+    .folio-round {{ font-size: 6px; letter-spacing: 0.18em; }}
     .investments {{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -402,6 +491,12 @@ page = f'''<!doctype html>
     <p class="eyebrow est">Est. 1976</p>
     <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
   </header>
+
+  <section class="folio" aria-label="Selected investments">
+    <ul class="folio-grid">
+{folio_html}
+    </ul>
+  </section>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
 {tabs_html}

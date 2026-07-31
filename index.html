@@ -90,6 +90,67 @@
 
   .dot { color: var(--accent); }
 
+  /* ---------- hero logo grid ---------- */
+  .folio {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 4px 24px 30px;
+    opacity: 0;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+  }
+  .folio-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px 36px;
+  }
+  .folio-grid li { min-width: 0; }
+  .folio-grid a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding-bottom: 16px;
+    text-decoration: none;
+  }
+  .folio-grid img {
+    max-height: 17px;
+    max-width: 82%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0);
+    opacity: 0.55;
+    transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+  }
+  .folio-grid a:hover img {
+    filter: none;
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+  .folio-round {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--faint);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(3px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+  .folio-grid a:hover .folio-round {
+    opacity: 1;
+    transform: none;
+  }
+
   /* ---------- category tabs ---------- */
   .tabs {
     display: flex;
@@ -98,7 +159,7 @@
     gap: 10px 25px;
     padding: 6px 18px 30px;
     opacity: 0;
-    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.5s forwards;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.6s forwards;
   }
   .tab {
     appearance: none;
@@ -252,6 +313,13 @@
     }
     .tab-full { display: none; }
     .tab-short { display: inline; }
+    .folio-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px 20px;
+    }
+    .folio-grid a { height: 50px; }
+    .folio-grid img { max-height: 15px; }
+    .folio-round { font-size: 6px; letter-spacing: 0.18em; }
     .investments {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -274,6 +342,43 @@
     <p class="eyebrow est">Est. 1976</p>
     <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
   </header>
+
+  <section class="folio" aria-label="Selected investments">
+    <ul class="folio-grid">
+      <li><a href="https://www.anthropic.com" target="_blank" rel="noopener">
+        <img src="assets/logos/anthropic.svg" alt="Anthropic" loading="lazy">
+        <span class="folio-round">Partnered at C <span class="dot">&middot;</span> Led the D</span>
+      </a></li>
+      <li><a href="https://openrouter.ai" target="_blank" rel="noopener">
+        <img src="assets/logos/openrouter2026.svg" alt="OpenRouter" loading="lazy">
+        <span class="folio-round">Partnered at Seed <span class="dot">&middot;</span> Led the A</span>
+      </a></li>
+      <li><a href="https://lovable.dev" target="_blank" rel="noopener">
+        <img src="assets/logos/lovable.svg" alt="Lovable" loading="lazy">
+        <span class="folio-round">Led the B</span>
+      </a></li>
+      <li><a href="https://suno.com" target="_blank" rel="noopener">
+        <img src="assets/logos/suno.svg" alt="Suno" loading="lazy">
+        <span class="folio-round">Led the C</span>
+      </a></li>
+      <li><a href="https://wisprflow.ai" target="_blank" rel="noopener">
+        <img src="assets/logos/wispr_flow.svg" alt="Wispr Flow" loading="lazy">
+        <span class="folio-round">Led the Seed <span class="dot">&middot;</span> A</span>
+      </a></li>
+      <li><a href="https://higgsfield.ai" target="_blank" rel="noopener">
+        <img src="assets/logos/higgsfield.webp" alt="Higgsfield" loading="lazy">
+        <span class="folio-round">Led the Seed</span>
+      </a></li>
+      <li><a href="https://gimletlabs.ai" target="_blank" rel="noopener">
+        <img src="assets/logos/gimlet_labs.png" alt="Gimlet" loading="lazy">
+        <span class="folio-round">Led the A</span>
+      </a></li>
+      <li><a href="https://www.uber.com" target="_blank" rel="noopener">
+        <img src="assets/logos/uber.png" alt="Uber" loading="lazy">
+        <span class="folio-round">Led the B</span>
+      </a></li>
+    </ul>
+  </section>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
       <button class="tab is-active" data-cat="partners" role="tab" aria-selected="true">Partners</button>
