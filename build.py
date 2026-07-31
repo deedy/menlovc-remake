@@ -113,9 +113,17 @@ for key, label in CATEGORIES:
     grids.append(f'    <div class="grid{layout}{hidden}" data-cat="{key}">\n{cards_html}\n    </div>')
 grids_html = '\n'.join(grids)
 
+SHORT_LABELS = {'operations': 'Ops'}  # compact label used on narrow screens
+
+def tab_label(key, label):
+    short = SHORT_LABELS.get(key)
+    if not short:
+        return label
+    return f'<span class="tab-full">{label}</span><span class="tab-short">{short}</span>'
+
 tabs_html = '\n'.join(
     f'      <button class="tab{" is-active" if key == "partners" else ""}" data-cat="{key}" role="tab" '
-    f'aria-selected="{"true" if key == "partners" else "false"}">{label}</button>'
+    f'aria-selected="{"true" if key == "partners" else "false"}">{tab_label(key, label)}</button>'
     for key, label in CATEGORIES)
 
 page = f'''<!doctype html>
@@ -233,6 +241,7 @@ page = f'''<!doctype html>
     color: var(--ink);
     border-bottom-color: var(--ink);
   }}
+  .tab-short {{ display: none; }}
 
   @keyframes rise {{
     from {{ opacity: 0; transform: translateY(18px); }}
@@ -352,7 +361,19 @@ page = f'''<!doctype html>
     }}
     .partners {{ padding: 0 16px 70px; }}
     .name {{ font-size: 17px; }}
-    .investments img {{ max-height: 8px; }}
+    .tabs {{
+      flex-wrap: nowrap;
+      gap: 16px;
+      white-space: nowrap;
+    }}
+    .tab-full {{ display: none; }}
+    .tab-short {{ display: inline; }}
+    .investments {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px 12px;
+    }}
+    .investments img {{ max-height: 9px; }}
   }}
 
   @media (prefers-reduced-motion: reduce) {{

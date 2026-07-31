@@ -113,6 +113,7 @@
     color: var(--ink);
     border-bottom-color: var(--ink);
   }
+  .tab-short { display: none; }
 
   @keyframes rise {
     from { opacity: 0; transform: translateY(18px); }
@@ -232,7 +233,19 @@
     }
     .partners { padding: 0 16px 70px; }
     .name { font-size: 17px; }
-    .investments img { max-height: 8px; }
+    .tabs {
+      flex-wrap: nowrap;
+      gap: 16px;
+      white-space: nowrap;
+    }
+    .tab-full { display: none; }
+    .tab-short { display: inline; }
+    .investments {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px 12px;
+    }
+    .investments img { max-height: 9px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -253,7 +266,7 @@
       <button class="tab is-active" data-cat="partners" role="tab" aria-selected="true">Partners</button>
       <button class="tab" data-cat="investors" role="tab" aria-selected="false">Investors</button>
       <button class="tab" data-cat="platform" role="tab" aria-selected="false">Platform</button>
-      <button class="tab" data-cat="operations" role="tab" aria-selected="false">Operations</button>
+      <button class="tab" data-cat="operations" role="tab" aria-selected="false"><span class="tab-full">Operations</span><span class="tab-short">Ops</span></button>
       <button class="tab" data-cat="advisors" role="tab" aria-selected="false">Advisors</button>
   </nav>
 
