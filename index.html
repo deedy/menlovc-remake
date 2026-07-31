@@ -217,24 +217,6 @@
   }
   .investments li:hover img { opacity: 1; }
 
-  /* ---------- footer ---------- */
-  footer {
-    border-top: 1px solid var(--ink);
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 20px 32px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-  footer .colophon {
-    font-style: italic;
-    font-size: 15px;
-    color: var(--faint);
-  }
-
   /* grid shows 3 columns from ~1017px up; center lone cards there */
   @media (min-width: 1017px) {
     .grid.center-last > .partner:last-child { grid-column: 2; }
@@ -245,7 +227,6 @@
   @media (max-width: 640px) {
     .grid { row-gap: 44px; }
     .partners { padding: 0 20px 100px; }
-    footer { padding: 20px 20px 48px; }
     .name { font-size: 26px; }
   }
 
@@ -272,7 +253,7 @@
   </nav>
 
   <main class="partners" id="partners">
-    <div class="grid center-last" data-cat="partners">
+    <div class="grid" data-cat="partners">
       <article class="partner" style="--i:0">
         <figure class="portrait">
           <img src="assets/partners/matt-murphy.jpg" alt="Ink line portrait of Matt Murphy" loading="lazy">
@@ -481,6 +462,46 @@
         <li><img src="assets/logos/h1-2.png" alt="H1" title="H1" loading="lazy"></li>
         </ul>
       </article>
+      <article class="partner" style="--i:13">
+        <figure class="portrait">
+          <img src="assets/partners/jordan-ormont.jpg" alt="Ink line portrait of Jordan Ormont" loading="lazy">
+          <img class="alt" src="assets/partners/jordan-ormont-hover.jpg" alt="" aria-hidden="true" loading="lazy">
+        </figure>
+        <h2 class="name">Jordan Ormont</h2>
+        <p class="role">Partner, Talent</p>
+      </article>
+      <article class="partner" style="--i:14">
+        <figure class="portrait">
+          <img src="assets/partners/kirsten-mello.jpg" alt="Ink line portrait of Kirsten Mello" loading="lazy">
+          <img class="alt" src="assets/partners/kirsten-mello-hover.jpg" alt="" aria-hidden="true" loading="lazy">
+        </figure>
+        <h2 class="name">Kirsten Mello</h2>
+        <p class="role">Partner, CFO</p>
+      </article>
+      <article class="partner" style="--i:15">
+        <figure class="portrait">
+          <img src="assets/partners/houman-haghighi.jpg" alt="Ink line portrait of Houman Haghighi" loading="lazy">
+          <img class="alt" src="assets/partners/houman-haghighi-hover.jpg" alt="" aria-hidden="true" loading="lazy">
+        </figure>
+        <h2 class="name">Houman Haghighi</h2>
+        <p class="role">Partner, Business Development</p>
+      </article>
+      <article class="partner" style="--i:16">
+        <figure class="portrait">
+          <img src="assets/partners/deborah-carrillo.jpg" alt="Ink line portrait of Deborah Carrillo" loading="lazy">
+          <img class="alt" src="assets/partners/deborah-carrillo-hover.jpg" alt="" aria-hidden="true" loading="lazy">
+        </figure>
+        <h2 class="name">Deborah Carrillo</h2>
+        <p class="role">Partner, General Counsel</p>
+      </article>
+      <article class="partner" style="--i:17">
+        <figure class="portrait">
+          <img src="assets/partners/h-dubose-montgomery.jpg" alt="Ink line portrait of H. DuBose Montgomery" loading="lazy">
+          <img class="alt" src="assets/partners/h-dubose-montgomery-hover.jpg" alt="" aria-hidden="true" loading="lazy">
+        </figure>
+        <h2 class="name">H. DuBose Montgomery</h2>
+        <p class="role">Founder &amp; Partner Emeritus</p>
+      </article>
     </div>
     <div class="grid center-last is-hidden" data-cat="investors">
       <article class="partner" style="--i:0">
@@ -683,11 +704,6 @@
       </article>
     </div>
   </main>
-
-  <footer>
-    <p class="eyebrow">Menlo Ventures</p>
-    <p class="colophon">Portraits drawn in ink, after the originals. A draft study.</p>
-  </footer>
 
   <script>
     document.querySelectorAll('.tab').forEach((btn) => {

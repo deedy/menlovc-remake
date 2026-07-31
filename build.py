@@ -65,6 +65,12 @@ by_cat = {key: [p for p in people if p['category'] == key] for key, _ in CATEGOR
 for key, order in CAT_ORDER.items():
     by_cat[key].sort(key=lambda p: order.index(p['slug']))
 
+# partner-titled folks from other groups also close out the Partners tab
+PARTNERS_EXTRA = ['jordan-ormont', 'kirsten-mello',
+                  'houman-haghighi', 'deborah-carrillo', 'h-dubose-montgomery']
+slug_map = {p['slug']: p for p in people}
+by_cat['partners'] += [slug_map[s] for s in PARTNERS_EXTRA]
+
 
 def card(p, i, show_logos=True):
     name = html.escape(p['name'])
@@ -331,24 +337,6 @@ page = f'''<!doctype html>
   }}
   .investments li:hover img {{ opacity: 1; }}
 
-  /* ---------- footer ---------- */
-  footer {{
-    border-top: 1px solid var(--ink);
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 20px 32px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 16px;
-    flex-wrap: wrap;
-  }}
-  footer .colophon {{
-    font-style: italic;
-    font-size: 15px;
-    color: var(--faint);
-  }}
-
   /* grid shows 3 columns from ~1017px up; center lone cards there */
   @media (min-width: 1017px) {{
     .grid.center-last > .partner:last-child {{ grid-column: 2; }}
@@ -359,7 +347,6 @@ page = f'''<!doctype html>
   @media (max-width: 640px) {{
     .grid {{ row-gap: 44px; }}
     .partners {{ padding: 0 20px 100px; }}
-    footer {{ padding: 20px 20px 48px; }}
     .name {{ font-size: 26px; }}
   }}
 
@@ -384,11 +371,6 @@ page = f'''<!doctype html>
   <main class="partners" id="partners">
 {grids_html}
   </main>
-
-  <footer>
-    <p class="eyebrow">Menlo Ventures</p>
-    <p class="colophon">Portraits drawn in ink, after the originals. A draft study.</p>
-  </footer>
 
   <script>
     document.querySelectorAll('.tab').forEach((btn) => {{
