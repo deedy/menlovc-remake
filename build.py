@@ -344,7 +344,7 @@ page = f'''<!doctype html>
     flex-wrap: nowrap;
     gap: 10px;
     margin-top: 12px;
-    min-height: 16px;
+    height: 22px;
   }}
   .investments li {{
     flex: 1 1 0;
@@ -352,9 +352,9 @@ page = f'''<!doctype html>
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    transition: flex-grow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
   }}
-  .investments li:hover {{ z-index: 5; }}
+  .investments li:hover {{ flex-grow: 3; }}
   .investments img {{
     display: block;
     width: auto;
@@ -364,12 +364,11 @@ page = f'''<!doctype html>
     object-fit: contain;
     filter: brightness(0);
     opacity: 0.7;
-    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
-    will-change: transform;
+    transition: opacity 0.3s ease, max-height 0.35s cubic-bezier(0.19, 1, 0.22, 1);
   }}
   .investments li:hover img {{
     opacity: 1;
-    transform: scale(2.2);
+    max-height: 22px;
   }}
 
   /* grid shows 3 columns from ~770px up; center lone cards there */
