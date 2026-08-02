@@ -19,7 +19,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' text-anchor='middle' fill='%23FF8304'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Mulish:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #0a0a0a;
@@ -29,6 +29,7 @@
     --faint: rgba(10, 10, 10, 0.55);
     --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
     --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --sans: "Mulish", "Proxima Nova", Roboto, "Helvetica Neue", sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -72,6 +73,7 @@
   .hero > :nth-child(1) { animation-delay: 0.10s; }
   .hero > :nth-child(2) { animation-delay: 0.25s; }
   .hero > :nth-child(3) { animation-delay: 0.40s; }
+  .hero > :nth-child(4) { animation-delay: 0.52s; }
 
   .wordmark {
     width: min(255px, 54vw);
@@ -87,6 +89,17 @@
   .cities {
     margin-top: 9px;
   }
+
+  .byline {
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: clamp(14px, 1.6vw, 16px);
+    letter-spacing: 0.015em;
+    color: var(--ink);
+    max-width: 44em;
+  }
+  .byline span { color: var(--accent); }
 
   .dot { color: var(--accent); }
 
@@ -110,8 +123,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    padding-bottom: 24px;
+    height: 66px;
+    padding-bottom: 32px;
     text-decoration: none;
   }
   .folio-grid img {
@@ -131,7 +144,7 @@
   }
   .folio-round {
     position: absolute;
-    bottom: 12px;
+    bottom: 19px;
     left: 0;
     right: 0;
     text-align: center;
@@ -152,15 +165,14 @@
   }
   .folio-val {
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
-    font-family: var(--mono);
-    font-size: 7px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     color: var(--ink);
     white-space: nowrap;
     opacity: 0;
@@ -176,6 +188,29 @@
     font-size: 5px;
     vertical-align: 2px;
   }
+  .see-portfolio {
+    text-align: center;
+    margin-top: 4px;
+  }
+  .see-portfolio a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(10, 10, 10, 0.4);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .see-portfolio a:hover { color: var(--ink); }
+  .see-portfolio .chev {
+    transition: transform 0.3s ease;
+  }
+  .see-portfolio a:hover .chev { transform: translateY(2px); }
 
   /* ---------- category tabs ---------- */
   .tabs {
@@ -261,6 +296,10 @@
   .partner:hover .portrait img { transform: scale(1.07); }
   .partner:hover .portrait img.alt { opacity: 1; }
 
+  /* managing partners open in watercolor; first hover anywhere dismisses it for good */
+  body:not(.grid-touched) .partner.managing .portrait img.alt { opacity: 1; }
+  body:not(.grid-touched) .partner.managing .role { color: var(--accent); }
+
   .name {
     font-size: 22px;
     font-weight: 400;
@@ -344,7 +383,7 @@
       gap: 4px 20px;
     }
     .folio-grid li.desktop-only { display: none; }
-    .folio-grid a { height: 50px; }
+    .folio-grid a { height: 56px; }
     .folio-grid img { max-height: 15px; }
     .folio-round { font-size: 6px; letter-spacing: 0.18em; }
     .investments {
@@ -368,6 +407,7 @@
     <img class="wordmark" src="assets/menlo-logo.png" alt="Menlo Ventures">
     <p class="eyebrow est">Est. 1976</p>
     <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
+    <p class="byline">We raised <span>~$3B</span> to lead rounds in era-defining startups from Seed to Series&nbsp;D</p>
   </header>
 
   <section class="folio" aria-label="Selected investments">
@@ -414,13 +454,17 @@
       </a></li>
       <li class="desktop-only"><a href="https://www.databricks.com" target="_blank" rel="noopener">
         <img src="assets/logos/databricks.png" alt="Databricks" loading="lazy">
-        <span class="folio-round">Sold Neon</span>
+        <span class="folio-round">Bought Neon</span>
       </a></li>
       <li class="desktop-only"><a href="https://cursor.com" target="_blank" rel="noopener">
         <img src="assets/logos/cursor.svg" alt="Cursor" loading="lazy">
-        <span class="folio-round">Sold Graphite</span>
+        <span class="folio-round">Bought Graphite</span>
       </a></li>
     </ul>
+    <p class="see-portfolio"><a href="portfolio/">
+      <span>See entire portfolio</span>
+      <svg class="chev" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a></p>
   </section>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
@@ -433,7 +477,7 @@
 
   <main class="partners" id="partners">
     <div class="grid" data-cat="partners">
-      <article class="partner" style="--i:0">
+      <article class="partner managing" style="--i:0">
         <figure class="portrait">
           <img src="assets/partners/matt-murphy.jpg" alt="Ink line portrait of Matt Murphy" loading="lazy">
           <img class="alt" src="assets/partners/matt-murphy-hover.jpg" alt="" aria-hidden="true" loading="lazy">
@@ -449,7 +493,7 @@
         <li><img src="assets/logos/lovable.svg" alt="Lovable" title="Lovable" loading="lazy"></li>
         </ul>
       </article>
-      <article class="partner" style="--i:1">
+      <article class="partner managing" style="--i:1">
         <figure class="portrait">
           <img src="assets/partners/venky-ganesan.jpg" alt="Ink line portrait of Venky Ganesan" loading="lazy">
           <img class="alt" src="assets/partners/venky-ganesan-hover.jpg" alt="" aria-hidden="true" loading="lazy">
@@ -465,7 +509,7 @@
         <li><img src="assets/logos/redfin-e1668463965277.png" alt="Redfin" title="Redfin" loading="lazy"></li>
         </ul>
       </article>
-      <article class="partner" style="--i:2">
+      <article class="partner managing" style="--i:2">
         <figure class="portrait">
           <img src="assets/partners/shawn-carolan.jpg" alt="Ink line portrait of Shawn Carolan" loading="lazy">
           <img class="alt" src="assets/partners/shawn-carolan-hover.jpg" alt="" aria-hidden="true" loading="lazy">
@@ -885,6 +929,16 @@
   </main>
 
   <script>
+    // managing partners rest in watercolor only until the first card hover
+    const grids = document.querySelector('.partners');
+    const dismissIntro = (e) => {
+      if (e.target.closest('.partner')) {
+        document.body.classList.add('grid-touched');
+        grids.removeEventListener('mouseover', dismissIntro);
+      }
+    };
+    grids.addEventListener('mouseover', dismissIntro);
+
     document.querySelectorAll('.tab').forEach((btn) => {
       btn.addEventListener('click', () => {
         document.body.classList.add('tabs-used');

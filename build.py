@@ -90,7 +90,8 @@ def card(p, i, show_logos=True):
     hover_path = f"assets/partners/{p['slug']}-hover.jpg"
     hover_html = (f'\n          <img class="alt" src="{hover_path}" alt="" aria-hidden="true" loading="lazy">'
                   if os.path.exists(hover_path) else '')
-    return f'''      <article class="partner" style="--i:{i}">
+    managing = ' managing' if p['title'] == 'Managing Partner' else ''
+    return f'''      <article class="partner{managing}" style="--i:{i}">
         <figure class="portrait">
           <img src="assets/partners/{p['slug']}.jpg" alt="Ink line portrait of {name}" loading="lazy">{hover_html}
         </figure>
@@ -113,35 +114,36 @@ for key, label in CATEGORIES:
     grids.append(f'    <div class="grid{layout}{hidden}" data-cat="{key}">\n{cards_html}\n    </div>')
 grids_html = '\n'.join(grids)
 
-# hero logo grid: (name, logo file, round note, website, valuation, is_public, desktop_only)
-# valuations render ONLY into local.html (gitignored) — never into the deployed index.html
+# hero logo grid. `val` and `note_local` render ONLY into local.html (gitignored) —
+# no dollar figure ever reaches the deployed index.html.
 FOLIO = [
-    ('Anthropic', 'anthropic.svg', 'Partnered at C, Led the D', 'https://www.anthropic.com', '$965B', False, False),
-    ('OpenRouter', 'openrouter2026.svg', 'Partnered at Seed, Led the A', 'https://openrouter.ai', 'Acq. by Stripe at $8B', False, False),
-    ('Lovable', 'lovable.svg', 'Led the B', 'https://lovable.dev', '$13B', False, False),
-    ('Suno', 'suno.svg', 'Led the C', 'https://suno.com', '$5.4B', False, False),
-    ('Wispr Flow', 'wispr_flow.svg', 'Led the Seed, A', 'https://wisprflow.ai', '$2B', False, False),
-    ('Higgsfield', 'higgsfield.webp', 'Led the Seed', 'https://higgsfield.ai', '$5B', False, False),
-    ('Gimlet', 'gimlet_labs.png', 'Led the A', 'https://gimletlabs.ai', '$3.5B', False, False),
-    ('Uber', 'uber.png', 'Led the B', 'https://www.uber.com', '$100B+', True, False),
-    ('Mercor', 'mercor.png', 'Partnered at B', 'https://mercor.com', '$20B', False, True),
-    ('Chai Discovery', 'chai_discovery.svg', 'Led the A', 'https://www.chaidiscovery.com', '$3.8B', False, True),
-    ('Databricks', 'databricks.png', 'Sold Neon', 'https://www.databricks.com', '$1B', False, True),
-    ('Cursor', 'cursor.svg', 'Sold Graphite', 'https://cursor.com', '~$1B', False, True),
+    dict(name='Anthropic', logo='anthropic.svg', note='Partnered at C, Led the D', url='https://www.anthropic.com', val='$965B'),
+    dict(name='OpenRouter', logo='openrouter2026.svg', note='Partnered at Seed, Led the A', url='https://openrouter.ai', val='Acq. by Stripe at $8B'),
+    dict(name='Lovable', logo='lovable.svg', note='Led the B', url='https://lovable.dev', val='$13B'),
+    dict(name='Suno', logo='suno.svg', note='Led the C', url='https://suno.com', val='$5.4B'),
+    dict(name='Wispr Flow', logo='wispr_flow.svg', note='Led the Seed, A', url='https://wisprflow.ai', val='$2B'),
+    dict(name='Higgsfield', logo='higgsfield.webp', note='Led the Seed', url='https://higgsfield.ai', val='$5B'),
+    dict(name='Gimlet', logo='gimlet_labs.png', note='Led the A', url='https://gimletlabs.ai', val='$3.5B'),
+    dict(name='Uber', logo='uber.png', note='Led the B', url='https://www.uber.com', val='$100B+', is_public=True),
+    dict(name='Mercor', logo='mercor.png', note='Partnered at B', url='https://mercor.com', val='$20B', desktop_only=True),
+    dict(name='Chai Discovery', logo='chai_discovery.svg', note='Led the A', url='https://www.chaidiscovery.com', val='$3.8B', desktop_only=True),
+    dict(name='Databricks', logo='databricks.png', note='Bought Neon', note_local='Bought Neon for $1B', url='https://www.databricks.com', val='~$134B', desktop_only=True),
+    dict(name='Cursor', logo='cursor.svg', note='Bought Graphite', note_local='Bought Graphite for ~$1B', url='https://cursor.com', val='~$29B', desktop_only=True),
 ]
 
 
 def folio_grid(with_valuations):
     items = []
-    for name, logo, note, url, val, is_public, desktop_only in FOLIO:
+    for c in FOLIO:
+        note = c.get('note_local', c['note']) if with_valuations else c['note']
         note_html = html.escape(note).replace(', ', ' <span class="dot">&middot;</span> ')
         val_html = ''
-        if with_valuations and val:
-            pub = ' <sup class="pub" title="Public company">&#9650;</sup>' if is_public else ''
-            val_html = f'\n        <span class="folio-val">{html.escape(val)}{pub}</span>'
-        cls = ' class="desktop-only"' if desktop_only else ''
-        items.append(f'''      <li{cls}><a href="{url}" target="_blank" rel="noopener">
-        <img src="assets/logos/{logo}" alt="{html.escape(name)}" loading="lazy">
+        if with_valuations and c.get('val'):
+            pub = ' <sup class="pub" title="Public company">&#9650;</sup>' if c.get('is_public') else ''
+            val_html = f'\n        <span class="folio-val">{html.escape(c["val"])}{pub}</span>'
+        cls = ' class="desktop-only"' if c.get('desktop_only') else ''
+        items.append(f'''      <li{cls}><a href="{c['url']}" target="_blank" rel="noopener">
+        <img src="assets/logos/{c['logo']}" alt="{html.escape(c['name'])}" loading="lazy">
         <span class="folio-round">{note_html}</span>{val_html}
       </a></li>''')
     return '\n'.join(items)
@@ -184,7 +186,7 @@ page = f'''<!doctype html>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='white'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='22' text-anchor='middle' fill='%23FF8304'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Mulish:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {{
     --ink: #0a0a0a;
@@ -194,6 +196,7 @@ page = f'''<!doctype html>
     --faint: rgba(10, 10, 10, 0.55);
     --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
     --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --sans: "Mulish", "Proxima Nova", Roboto, "Helvetica Neue", sans-serif;
   }}
 
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
@@ -237,6 +240,7 @@ page = f'''<!doctype html>
   .hero > :nth-child(1) {{ animation-delay: 0.10s; }}
   .hero > :nth-child(2) {{ animation-delay: 0.25s; }}
   .hero > :nth-child(3) {{ animation-delay: 0.40s; }}
+  .hero > :nth-child(4) {{ animation-delay: 0.52s; }}
 
   .wordmark {{
     width: min(255px, 54vw);
@@ -252,6 +256,17 @@ page = f'''<!doctype html>
   .cities {{
     margin-top: 9px;
   }}
+
+  .byline {{
+    margin-top: 24px;
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: clamp(14px, 1.6vw, 16px);
+    letter-spacing: 0.015em;
+    color: var(--ink);
+    max-width: 44em;
+  }}
+  .byline span {{ color: var(--accent); }}
 
   .dot {{ color: var(--accent); }}
 
@@ -275,8 +290,8 @@ page = f'''<!doctype html>
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    padding-bottom: 24px;
+    height: 66px;
+    padding-bottom: 32px;
     text-decoration: none;
   }}
   .folio-grid img {{
@@ -296,7 +311,7 @@ page = f'''<!doctype html>
   }}
   .folio-round {{
     position: absolute;
-    bottom: 12px;
+    bottom: 19px;
     left: 0;
     right: 0;
     text-align: center;
@@ -317,15 +332,14 @@ page = f'''<!doctype html>
   }}
   .folio-val {{
     position: absolute;
-    bottom: 1px;
+    bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
-    font-family: var(--mono);
-    font-size: 7px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     color: var(--ink);
     white-space: nowrap;
     opacity: 0;
@@ -341,6 +355,29 @@ page = f'''<!doctype html>
     font-size: 5px;
     vertical-align: 2px;
   }}
+  .see-portfolio {{
+    text-align: center;
+    margin-top: 4px;
+  }}
+  .see-portfolio a {{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-family: var(--mono);
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(10, 10, 10, 0.4);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }}
+  .see-portfolio a:hover {{ color: var(--ink); }}
+  .see-portfolio .chev {{
+    transition: transform 0.3s ease;
+  }}
+  .see-portfolio a:hover .chev {{ transform: translateY(2px); }}
 
   /* ---------- category tabs ---------- */
   .tabs {{
@@ -426,6 +463,10 @@ page = f'''<!doctype html>
   .partner:hover .portrait img {{ transform: scale(1.07); }}
   .partner:hover .portrait img.alt {{ opacity: 1; }}
 
+  /* managing partners open in watercolor; first hover anywhere dismisses it for good */
+  body:not(.grid-touched) .partner.managing .portrait img.alt {{ opacity: 1; }}
+  body:not(.grid-touched) .partner.managing .role {{ color: var(--accent); }}
+
   .name {{
     font-size: 22px;
     font-weight: 400;
@@ -509,7 +550,7 @@ page = f'''<!doctype html>
       gap: 4px 20px;
     }}
     .folio-grid li.desktop-only {{ display: none; }}
-    .folio-grid a {{ height: 50px; }}
+    .folio-grid a {{ height: 56px; }}
     .folio-grid img {{ max-height: 15px; }}
     .folio-round {{ font-size: 6px; letter-spacing: 0.18em; }}
     .investments {{
@@ -533,12 +574,17 @@ page = f'''<!doctype html>
     <img class="wordmark" src="assets/menlo-logo.png" alt="Menlo Ventures">
     <p class="eyebrow est">Est. 1976</p>
     <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
+    <p class="byline">We raised <span>~$3B</span> to lead rounds in era-defining startups from Seed to Series&nbsp;D</p>
   </header>
 
   <section class="folio" aria-label="Selected investments">
     <ul class="folio-grid">
 {folio_html}
     </ul>
+    <p class="see-portfolio"><a href="portfolio/">
+      <span>See entire portfolio</span>
+      <svg class="chev" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a></p>
   </section>
 
   <nav class="tabs" role="tablist" aria-label="Team categories">
@@ -550,6 +596,16 @@ page = f'''<!doctype html>
   </main>
 
   <script>
+    // managing partners rest in watercolor only until the first card hover
+    const grids = document.querySelector('.partners');
+    const dismissIntro = (e) => {{
+      if (e.target.closest('.partner')) {{
+        document.body.classList.add('grid-touched');
+        grids.removeEventListener('mouseover', dismissIntro);
+      }}
+    }};
+    grids.addEventListener('mouseover', dismissIntro);
+
     document.querySelectorAll('.tab').forEach((btn) => {{
       btn.addEventListener('click', () => {{
         document.body.classList.add('tabs-used');
@@ -571,6 +627,32 @@ page = f'''<!doctype html>
 open('index.html', 'w').write(page)
 # local.html (gitignored): same page with valuations rendered into the folio grid
 open('local.html', 'w').write(page.replace(folio_html, folio_html_local))
+
+# /portfolio/ stub — same head and hero, content to come
+head_p = page.split('<head>', 1)[1].split('</head>', 1)[0]
+head_p = head_p.replace('<title>Menlo Ventures — The Team</title>',
+                        '<title>Menlo Ventures — Portfolio</title>')
+hero_p = page.split('<header class="hero">', 1)[1].split('</header>', 1)[0]
+hero_p = hero_p.replace('src="assets/', 'src="../assets/')
+hero_p = hero_p.replace(
+    '<img class="wordmark" src="../assets/menlo-logo.png" alt="Menlo Ventures">',
+    '<a href="../" aria-label="Back to home"><img class="wordmark" src="../assets/menlo-logo.png" alt="Menlo Ventures"></a>')
+
+portfolio_page = f'''<!doctype html>
+<html lang="en">
+<head>{head_p}</head>
+<body>
+
+  <header class="hero">{hero_p}</header>
+
+  <main class="partners" id="portfolio">
+  </main>
+
+</body>
+</html>
+'''
+os.makedirs('portfolio', exist_ok=True)
+open('portfolio/index.html', 'w').write(portfolio_page)
 total = sum(len(v) for v in by_cat.values())
 print(f'index.html + local.html written — {total} people: ' +
       ', '.join(f'{label} {len(by_cat[key])}' for key, label in CATEGORIES))
