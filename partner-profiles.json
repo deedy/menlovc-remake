@@ -1,0 +1,817 @@
+{
+ "venky-ganesan": {
+  "investments": [
+   {
+    "name": "Abnormal AI",
+    "logo": "abnormal_security.svg",
+    "founded": "2018",
+    "stage": "Partnered at B",
+    "partnered": "2020",
+    "about": "Abnormal AI is the leading AI-native human behavior security platform, leveraging machine learning to stop&hellip;"
+   },
+   {
+    "name": "Unravel",
+    "logo": "unravel.png",
+    "founded": "2013",
+    "stage": "Partnered at A",
+    "partnered": "2015",
+    "about": "Unravel Data automates and simplifies Big Data operations (DataOps) with a full-stack performance intelligence platform&hellip;"
+   },
+   {
+    "name": "AVI Networks",
+    "logo": "avi.svg",
+    "founded": "2012",
+    "stage": "Partnered at B &middot; Acq. by VMware",
+    "partnered": "2014",
+    "about": "AVI Networks offers a software solution that maximizes application delivery of enterprise and cloud-based applications."
+   },
+   {
+    "name": "Rover",
+    "logo": "rover-1.png",
+    "founded": "2011",
+    "stage": "Partnered at C &middot; Acq. by Blackstone",
+    "partnered": "2014",
+    "about": "Rover connects dog and cat parents with loving pet sitters and dog walkers in neighborhoods across the US, Canada, UK, and Europe."
+   },
+   {
+    "name": "BitSight",
+    "logo": "bitsight-2.png",
+    "founded": "2011",
+    "stage": "Partnered at A",
+    "partnered": "2013",
+    "about": "BitSight Technologies is transforming how companies manage information security risk with objective, evidence-based security ratings."
+   },
+   {
+    "name": "Poshmark",
+    "logo": "poshmark.png",
+    "founded": "2011",
+    "stage": "Partnered at B &middot; IPO 2021 &middot; Acq. by Naver",
+    "partnered": "2012",
+    "about": "Poshmark is a social commerce marketplace where people can buy and sell new or used clothing, shoes, accessories, and home goods."
+   },
+   {
+    "name": "Redfin",
+    "logo": "redfin-e1668463965277.png",
+    "founded": "2002",
+    "stage": "Partnered (at Globespan) &middot; IPO 2017",
+    "partnered": "2011",
+    "about": "Redfin is a real estate brokerage founded with the hopes of upending the traditional brokerage model."
+   },
+   {
+    "name": "Palo Alto Networks",
+    "logo": "palo_alto_networks.png",
+    "founded": "2005",
+    "stage": "Partnered (at Globespan) &middot; IPO 2012",
+    "partnered": "2007",
+    "about": "Palo Alto Networks is a multinational cybersecurity company."
+   }
+  ]
+ },
+ "shawn-carolan": {
+  "investments": [
+   {
+    "name": "Monarch",
+    "logo": "monarch-2025.png",
+    "founded": "2018",
+    "stage": "Partnered at A",
+    "partnered": "2021",
+    "about": "Monarch is a money management platform that helps users create a financial plan, budget, and track their goals."
+   },
+   {
+    "name": "OpenSpace",
+    "logo": "openspace.png",
+    "founded": "2017",
+    "stage": "Partnered at B",
+    "partnered": "2020",
+    "about": "OpenSpace provides next-generation, 360\u00ba photo documentation for jobsites, powerful integrations, and the smartest&hellip;"
+   },
+   {
+    "name": "Chime",
+    "logo": "chime.svg",
+    "founded": "2012",
+    "stage": "Partnered at C &middot; IPO 2025",
+    "partnered": "2018",
+    "about": "Chime helps members avoid bank fees, save money automatically, and lead healthier financial lives."
+   },
+   {
+    "name": "ShipBob",
+    "logo": "shipbob-1.png",
+    "founded": "2014",
+    "stage": "Partnered at C",
+    "partnered": "2018",
+    "about": "ShipBob is a tech-enabled 3PL that offers simple, fast, and affordable e-commerce fulfillment for direct-to-consumer brands."
+   },
+   {
+    "name": "JUMP",
+    "logo": "jump_logo.png",
+    "founded": "2010",
+    "stage": "Partnered at A &middot; Acq. by Uber",
+    "partnered": "2017",
+    "about": "JUMP is a dockless scooter and electric bike sharing system."
+   },
+   {
+    "name": "Uber",
+    "logo": "uber.png",
+    "founded": "2009",
+    "stage": "Partnered at B &middot; IPO 2019",
+    "partnered": "2011",
+    "about": "Uber innovates at the intersection of mobile technology, transportation, and logistics."
+   },
+   {
+    "name": "Roku",
+    "logo": "roku_logo.png",
+    "founded": "2002",
+    "stage": "Partnered at C &middot; IPO 2017",
+    "partnered": "2008",
+    "about": "Roku pioneered streaming TV, connecting users to content they love, enabling content publishers to build and monetize&hellip;"
+   },
+   {
+    "name": "Siri",
+    "logo": "siri-1.png",
+    "founded": "2007",
+    "stage": "Partnered at A &middot; Acq. by Apple",
+    "partnered": "2008",
+    "about": "Siri was a voice recognition company spun out of the non-profit institute SRI International."
+   }
+  ]
+ },
+ "tim-tully": {
+  "investments": [
+   {
+    "name": "Gimlet Labs",
+    "logo": "gimlet_labs.png",
+    "founded": "2023",
+    "stage": "Partnered at A",
+    "partnered": "2026",
+    "about": "Gimlet provides serverless inference for AI agents, handling scheduling, orchestration, and optimization, so you can&hellip;"
+   },
+   {
+    "name": "Inception",
+    "logo": "inception_labs.png",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Inception is leveraging diffusion technology to develop a new generation of LLMs that are faster and more efficient,&hellip;"
+   },
+   {
+    "name": "Unstructured",
+    "logo": "unstructured.png",
+    "founded": "2022",
+    "stage": "Partnered at B",
+    "partnered": "2024",
+    "about": "Unstructured transforms organizations\u2019 complex, unstructured data like PDFs, PPTX, HTML files, and more into formats&hellip;"
+   },
+   {
+    "name": "Fleet AI",
+    "logo": "fleet.svg",
+    "founded": "2023",
+    "stage": "Partnered at Pre-Seed",
+    "partnered": "2023",
+    "about": "Fleet creates simulated worlds and real-world challenges to better understand and shape the behavior of artificial intelligences."
+   },
+   {
+    "name": "Neon",
+    "logo": "neon.svg",
+    "founded": "2021",
+    "stage": "Partnered at B &middot; Acq. by Databricks",
+    "partnered": "2023",
+    "about": "Neon is a multi-cloud Serverless Postgres provider that is purpose-built to address modern workloads oriented around edge computing and AI."
+   },
+   {
+    "name": "Eve",
+    "logo": "eve.svg",
+    "founded": "2020",
+    "stage": "Partnered at Seed",
+    "partnered": "2022",
+    "about": "Eve is the legal AI platform built for the full plaintiff case lifecycle: handle more cases, reduce time on desk, and&hellip;"
+   },
+   {
+    "name": "Pinecone",
+    "logo": "pinecone.png",
+    "founded": "2019",
+    "stage": "Partnered at A",
+    "partnered": "2022",
+    "about": "Pinecone makes it easy to build high-performance AI applications with its managed, cloud-native vector database and simple API."
+   },
+   {
+    "name": "Squint",
+    "logo": "squint.png",
+    "founded": "2021",
+    "stage": "Partnered at Pre-Seed",
+    "partnered": "2022",
+    "about": "Squint is the leading Manufacturing Intelligence platform that helps the world\u2019s most advanced companies lower downtime&hellip;"
+   }
+  ]
+ },
+ "matt-kraning": {
+  "investments": [
+   {
+    "name": "Heaviside Industries",
+    "logo": "heaviside-black.png",
+    "founded": "2024",
+    "stage": "Partnered at A",
+    "partnered": "2026",
+    "about": "Heaviside Industries builds precise, affordable, and autonomous drones across air, land, and sea for U.S."
+   },
+   {
+    "name": "RunSybil",
+    "logo": "runsybil.svg",
+    "founded": "2023",
+    "stage": "Partnered at A",
+    "partnered": "2026",
+    "about": "RunSybil is an AI-powered offensive security platform that continuously tests your applications and infrastructure for&hellip;"
+   },
+   {
+    "name": "Axiom",
+    "logo": "axiom.svg",
+    "founded": "2025",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Axiom is building a self-improving, superintelligent reasoner, starting with an AI mathematician."
+   },
+   {
+    "name": "Medra",
+    "logo": "medra.svg",
+    "founded": "2022",
+    "stage": "Partnered at A",
+    "partnered": "2025",
+    "about": "Medra builds physical AI systems to collect life science data with a level of precision and scale humans alone could never achieve."
+   },
+   {
+    "name": "Phylo",
+    "logo": "phylo.png",
+    "founded": "2025",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Phylo is an applied research lab building the best agentic intelligence to accelerate discoveries for every biomedical scientist."
+   },
+   {
+    "name": "Westmag",
+    "logo": "westmag.svg",
+    "founded": "2025",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Westmag designs and manufactures drone motors and robot actuators\u2014built and scaled in America to serve the global market."
+   },
+   {
+    "name": "Wispr Flow",
+    "logo": "wispr_flow.svg",
+    "founded": "2021",
+    "stage": "Partnered at A",
+    "partnered": "2025",
+    "about": "Wispr Flow is an immersive voice keyboard that provides effortless voice dictation for every application with AI commands and auto-edits."
+   },
+   {
+    "name": "Peregrine",
+    "logo": "peregrine.svg",
+    "founded": "2018",
+    "stage": "Partnered at Seed (prior)",
+    "partnered": "2018",
+    "about": "Peregrine creates software that helps organizations integrate and analyze large and complex data stores to create&hellip;"
+   }
+  ]
+ },
+ "deedy-das": {
+  "investments": [
+   {
+    "name": "Modal",
+    "logo": "modal.svg",
+    "founded": "2021",
+    "stage": "Partnered at C",
+    "partnered": "2026",
+    "about": "Modal is a serverless compute platform that makes it easy for developers to run compute-intensive workloads like ML&hellip;"
+   },
+   {
+    "name": "OpenRouter",
+    "logo": "openrouter2026.svg",
+    "founded": "2023",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "OpenRouter is a unified API gateway that provides access to hundreds of AI models from leading providers like&hellip;"
+   },
+   {
+    "name": "Wispr Flow",
+    "logo": "wispr_flow.svg",
+    "founded": "2021",
+    "stage": "Partnered at A",
+    "partnered": "2025",
+    "about": "Wispr Flow is an immersive voice keyboard that provides effortless voice dictation for every application with AI commands and auto-edits."
+   },
+   {
+    "name": "Inception",
+    "logo": "inception_labs.png",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Inception is leveraging diffusion technology to develop a new generation of LLMs that are faster and more efficient,&hellip;"
+   },
+   {
+    "name": "Ndea",
+    "logo": "ndea-inverse.svg",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Ndea is building frontier AI systems that blend intuitive pattern recognition and formal reasoning into a unified architecture."
+   },
+   {
+    "name": "Prime Intellect",
+    "logo": "prime_intellect.svg",
+    "founded": "2023",
+    "stage": "Partnered at A",
+    "partnered": "2025",
+    "about": "Prime Intellect democratizes AI development at scale, making it easy to find global compute resources and train&hellip;"
+   },
+   {
+    "name": "Fintool",
+    "logo": "fintool.png",
+    "founded": "2024",
+    "stage": "Partnered at Seed &middot; Acq. by Microsoft",
+    "partnered": "2025",
+    "about": "Fintool is building the financial copilot for public equity investors, helping discover financial insights beyond the&hellip;"
+   },
+   {
+    "name": "Goodfire",
+    "logo": "goodfire.svg",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Goodfire is an AI interpretability research lab focused on understanding and intentionally designing advanced AI systems."
+   }
+  ]
+ },
+ "amy-wu-martin": {
+  "investments": [
+   {
+    "name": "ShopMy",
+    "logo": "shopmy_logo_primary.png",
+    "founded": "2020",
+    "stage": "Partnered at B",
+    "partnered": "2025",
+    "about": "ShopMy unites brands, creators, and consumers through an intuitive, all-in-one platform that transforms trusted&hellip;"
+   },
+   {
+    "name": "Suno",
+    "logo": "suno.svg",
+    "founded": "2022",
+    "stage": "Partnered at C",
+    "partnered": "2025",
+    "about": "Suno is an AI-powered music generation platform, transforming music into an interactive, social, and participatory experience."
+   },
+   {
+    "name": "Alta",
+    "logo": "alta.svg",
+    "founded": "2023",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Alta is a personal style companion that simplifies the daily decision of what to wear, offering stress-free outfit&hellip;"
+   },
+   {
+    "name": "Brain Jar Games",
+    "logo": "brain_jar_games.png",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Brain Jar Games is a global studio of AAA veterans on a mission to create vibrant games that players love to share."
+   },
+   {
+    "name": "Delphi",
+    "logo": "delphi.png",
+    "founded": "2022",
+    "stage": "Partnered at A",
+    "partnered": "2024",
+    "about": "Delphi turns your expertise into a 24/7 Digital Mind\u2014ready to teach, advise, and scale your impact."
+   },
+   {
+    "name": "Good Job Games",
+    "logo": "good_job_games-1024x300-1.png",
+    "founded": "2017",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Good Job Games builds fun, challenging, and creative games that are crafted with attention to perfection, offering&hellip;"
+   },
+   {
+    "name": "Higgsfield",
+    "logo": "higgsfield.webp",
+    "founded": "2023",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Higgsfield is a video AI company dedicated to democratizing social media content creation to everyone."
+   },
+   {
+    "name": "Slingshot AI",
+    "logo": "slingshot_ai.svg",
+    "founded": "2022",
+    "stage": "Partnered at A",
+    "partnered": "2024",
+    "about": "Slingshot is an AI research company with a mission to exponentially increase global access to mental healthcare."
+   }
+  ]
+ },
+ "joff-redfern": {
+  "investments": [
+   {
+    "name": "Flapping Airplanes",
+    "logo": "flapping_airplanes.png",
+    "founded": "2025",
+    "stage": "Partnered at Seed",
+    "partnered": "2026",
+    "about": "Flapping Airplanes is a foundational AI research lab devoted to solving the problem of data efficiency."
+   },
+   {
+    "name": "Lovable",
+    "logo": "lovable.svg",
+    "founded": "2023",
+    "stage": "Partnered at B",
+    "partnered": "2025",
+    "about": "Lovable is an AI-powered development platform that transforms natural language into production-ready web applications,&hellip;"
+   },
+   {
+    "name": "Trove AI",
+    "logo": "Trove_logo-1.png",
+    "founded": "2023",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Trove supercharges research, analysis, and drafting in fields like private equity using AI agents that securely tap&hellip;"
+   },
+   {
+    "name": "Atta",
+    "logo": "atta.png",
+    "founded": "2024",
+    "stage": "Partnered at SAFE",
+    "partnered": "2024",
+    "about": "Atta\u2019s AI agents help you tackle any analytical challenge\u2014model data, discovering hidden patterns, or forecasting what\u2019s next."
+   },
+   {
+    "name": "Mercor",
+    "logo": "mercor.png",
+    "founded": "2023",
+    "stage": "Partnered at B",
+    "partnered": "2024",
+    "about": "Mercor is an AI-powered hiring platform that matches talent with the opportunities they\u2019re best suited for."
+   },
+   {
+    "name": "Okthx",
+    "logo": "okthx.svg",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Okthx is a coordination assistant for working parents that handles the actual work of scheduling."
+   },
+   {
+    "name": "OpenHands AI",
+    "logo": "openhands.svg",
+    "founded": "2024",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "OpenHands AI is an open-source AI platform for autonomous software engineering development, powered by AI and LLMs."
+   },
+   {
+    "name": "WisdomAI",
+    "logo": "wisdomai.png",
+    "founded": "&mdash;",
+    "stage": "Partnered",
+    "partnered": "&mdash;",
+    "about": "WisdomAI is a generative AI conversational assistant to get expert-level insights from your business data."
+   }
+  ]
+ },
+ "jp-sanday": {
+  "investments": [
+   {
+    "name": "CollegeVine",
+    "logo": "collegevine.svg",
+    "founded": "2015",
+    "stage": "Partnered at C",
+    "partnered": "2025",
+    "about": "CollegeVine is an AI agent platform for universities to streamline workflows, drive operational efficiency, and create&hellip;"
+   },
+   {
+    "name": "Solace",
+    "logo": "solace.svg",
+    "founded": "2022",
+    "stage": "Partnered at B",
+    "partnered": "2025",
+    "about": "Solace connects Medicare patients with certified healthcare advocates who help patients navigate their complex care journeys."
+   },
+   {
+    "name": "OfferFit",
+    "logo": "offerfit.png",
+    "founded": "2020",
+    "stage": "Partnered at B &middot; Acq. by Braze",
+    "partnered": "2023",
+    "about": "OfferFit is a ML-powered, automated experimentation platform for lifecycle marketers that enables true mass&hellip;"
+   },
+   {
+    "name": "Sana",
+    "logo": "sana_labs.png",
+    "founded": "2016",
+    "stage": "Partnered at B &middot; Acq. by Workday",
+    "partnered": "2022",
+    "about": "Sana is an AI-powered learning platform that empowers organizations to find, share, and harness the knowledge they need&hellip;"
+   },
+   {
+    "name": "Qualio",
+    "logo": "qualio.png",
+    "founded": "2012",
+    "stage": "Partnered at B",
+    "partnered": "2021",
+    "about": "Qualio is a cloud-based quality management system for life sciences."
+   },
+   {
+    "name": "Abnormal AI",
+    "logo": "abnormal_security.svg",
+    "founded": "2018",
+    "stage": "Partnered at B",
+    "partnered": "2020",
+    "about": "Abnormal AI is the leading AI-native human behavior security platform, leveraging machine learning to stop&hellip;"
+   },
+   {
+    "name": "CodeSignal",
+    "logo": "codesignal-1.png",
+    "founded": "2014",
+    "stage": "Partnered at C",
+    "partnered": "2020",
+    "about": "CodeSignal\u2019s AI-native skills platform helps organizations hire, train, and grow talent at scale while empowering&hellip;"
+   },
+   {
+    "name": "H1",
+    "logo": "h1-2.png",
+    "founded": "2017",
+    "stage": "Partnered at A",
+    "partnered": "2020",
+    "about": "H1's health data platform supports the end-to-end therapeutic development process of medical companies and healthcare systems."
+   }
+  ]
+ },
+ "rama-sekhar": {
+  "investments": [
+   {
+    "name": "Clerk",
+    "logo": "clerk.svg",
+    "founded": "2019",
+    "stage": "Partnered at C",
+    "partnered": "2025",
+    "about": "Clerk provides developer tools for authentication, user management, and session management."
+   },
+   {
+    "name": "Graphite",
+    "logo": "graphite-1.png.webp",
+    "founded": "2020",
+    "stage": "Partnered at B &middot; Acq. by Cursor",
+    "partnered": "2025",
+    "about": "Graphite is an AI-powered developer productivity platform that helps developers create, review, and merge smaller code&hellip;"
+   },
+   {
+    "name": "Zafran Security",
+    "logo": "zafran.svg",
+    "founded": "2022",
+    "stage": "Partnered at C",
+    "partnered": "2025",
+    "about": "Zafran Security is the first AI-native, end-to-end Threat Exposure Management platform to help security teams stop&hellip;"
+   },
+   {
+    "name": "Astrix",
+    "logo": "astrix.png",
+    "founded": "2021",
+    "stage": "Partnered at B",
+    "partnered": "2024",
+    "about": "Astrix is the leader in non-human identity (NHI) security."
+   },
+   {
+    "name": "Harness",
+    "logo": "harness.png",
+    "founded": "2016",
+    "stage": "Partnered at A",
+    "partnered": "2017",
+    "about": "Harness\u2019 Continuous-Delivery-as-a-Service platform enables every software engineering team in the world to deliver code&hellip;"
+   },
+   {
+    "name": "BeHeard",
+    "logo": "beheard.webp",
+    "founded": "&mdash;",
+    "stage": "Partnered",
+    "partnered": "&mdash;",
+    "about": "BeHeard reimagines feedback by transforming boring surveys into continuous, heart-to-heart conversations with brands."
+   }
+  ]
+ },
+ "steve-sloane": {
+  "investments": [
+   {
+    "name": "Eleos Health",
+    "logo": "eleos.png",
+    "founded": "2020",
+    "stage": "Partnered at B",
+    "partnered": "2023",
+    "about": "Eleos Health leverages specialized clinical AI models to turn behavioral health conversations into documentation and&hellip;"
+   },
+   {
+    "name": "CloudTrucks",
+    "logo": "cloudtrucks.png",
+    "founded": "2019",
+    "stage": "Partnered at B",
+    "partnered": "2021",
+    "about": "Cloudtrucks helps trucking owner-operators and small fleets source and instantly book loads, get paid faster, and&hellip;"
+   },
+   {
+    "name": "Enable",
+    "logo": "enable.svg",
+    "founded": "2016",
+    "stage": "Partnered at A",
+    "partnered": "2020",
+    "about": "Enable is a collaborative B2B rebate management platform that makes it easy to manage and scale rebate programs."
+   },
+   {
+    "name": "Observe.AI",
+    "logo": "observe-ai.png",
+    "founded": "2017",
+    "stage": "Partnered at B",
+    "partnered": "2020",
+    "about": "Observe.AI transforms customer service experiences and improves agent performance by helping businesses analyze 100% of&hellip;"
+   },
+   {
+    "name": "6 River Systems",
+    "logo": "6_river.png",
+    "founded": "2015",
+    "stage": "Partnered at B &middot; Acq. by Shopify",
+    "partnered": "2018",
+    "about": "6 River Systems is a fulfillment solutions provider making warehouses more efficient with autonomous mobile robots and AI."
+   },
+   {
+    "name": "Chime",
+    "logo": "chime.svg",
+    "founded": "2012",
+    "stage": "Partnered at C &middot; IPO 2025",
+    "partnered": "2018",
+    "about": "Chime helps members avoid bank fees, save money automatically, and lead healthier financial lives."
+   },
+   {
+    "name": "ShipBob",
+    "logo": "shipbob-1.png",
+    "founded": "2014",
+    "stage": "Partnered at C",
+    "partnered": "2018",
+    "about": "ShipBob is a tech-enabled 3PL that offers simple, fast, and affordable e-commerce fulfillment for direct-to-consumer brands."
+   },
+   {
+    "name": "Scout RFP",
+    "logo": "scout.png",
+    "founded": "2013",
+    "stage": "Partnered at B &middot; Acq. by Workday",
+    "partnered": "2017",
+    "about": "Scout RFP provides cloud-based strategic sourcing solutions that help companies streamline supplier selection,&hellip;"
+   }
+  ]
+ },
+ "croom-beatty": {
+  "investments": [
+   {
+    "name": "Abacus",
+    "logo": "abacus.png",
+    "founded": "2025",
+    "stage": "Partnered at Seed",
+    "partnered": "2025",
+    "about": "Abacus helps tax firms eliminate manual data entry workflows with intelligent document processing that integrates with&hellip;"
+   },
+   {
+    "name": "NationGraph",
+    "logo": "nationgraph.svg",
+    "founded": "2024",
+    "stage": "Partnered at A",
+    "partnered": "2025",
+    "about": "NationGraph is an AI-driven sales intelligence platform built to transform how organizations uncover and win public-sector business."
+   },
+   {
+    "name": "Numeric",
+    "logo": "numeric.png",
+    "founded": "2020",
+    "stage": "Partnered at Seed",
+    "partnered": "2024",
+    "about": "Numeric is an AI accounting automation platform, built to take manual work off accountants\u2019 plates so they can focus on what's impactful."
+   },
+   {
+    "name": "Arch",
+    "logo": "arch-navy.png",
+    "founded": "2018",
+    "stage": "Partnered at A",
+    "partnered": "2023",
+    "about": "Arch is the digital admin for private investments, delivering the missing infrastructure for managing and understanding&hellip;"
+   },
+   {
+    "name": "Prodigal",
+    "logo": "prodigal.png",
+    "founded": "2018",
+    "stage": "Partnered at A",
+    "partnered": "2021",
+    "about": "Prodigal gives lenders and collections agencies insights from customer interactions using advanced conversational AI."
+   },
+   {
+    "name": "Finch",
+    "logo": "finch.png",
+    "founded": "2020",
+    "stage": "Partnered at Seed",
+    "partnered": "2020",
+    "about": "Finch allows applications to access data and make changes across payroll and HR systems through a single API."
+   },
+   {
+    "name": "Rivet Health",
+    "logo": "rivet.png",
+    "founded": "2018",
+    "stage": "Partnered at A &middot; Acq. by Zelis",
+    "partnered": "2020",
+    "about": "Rivet is a healthcare SaaS solution that maximizes payments from payers and patients, making it easy for medical practitioners to get paid."
+   },
+   {
+    "name": "ShipBob",
+    "logo": "shipbob-1.png",
+    "founded": "2014",
+    "stage": "Partnered at C",
+    "partnered": "2018",
+    "about": "ShipBob is a tech-enabled 3PL that offers simple, fast, and affordable e-commerce fulfillment for direct-to-consumer brands."
+   }
+  ]
+ },
+ "greg-yap": {
+  "investments": [
+   {
+    "name": "Cartwheel",
+    "logo": "cartwheel.png",
+    "founded": "2022",
+    "stage": "Partnered at A",
+    "partnered": "2023",
+    "about": "Cartwheel is a tech-enabled provider for youth mental health services, helping schools and families tackle the student mental health crisis."
+   },
+   {
+    "name": "Ophelia",
+    "logo": "ophelia-1.svg",
+    "founded": "2019",
+    "stage": "Partnered at A",
+    "partnered": "2021",
+    "about": "Ophelia is reinventing drug rehab by making evidence-based treatment private, affordable, and accessible via telemedicine."
+   },
+   {
+    "name": "Genesis Molecular AI",
+    "logo": "genesis_molecular_ai.png",
+    "founded": "2019",
+    "stage": "Partnered at A",
+    "partnered": "2020",
+    "about": "Genesis Molecular AI is pioneering foundation models for molecular AI to unlock a new era of drug design and development."
+   },
+   {
+    "name": "H1",
+    "logo": "h1-2.png",
+    "founded": "2017",
+    "stage": "Partnered at A",
+    "partnered": "2020",
+    "about": "H1's health data platform supports the end-to-end therapeutic development process of medical companies and healthcare systems."
+   },
+   {
+    "name": "Benchling",
+    "logo": "benchling.svg",
+    "founded": "2012",
+    "stage": "Partnered at C",
+    "partnered": "2019",
+    "about": "Benchling is a life sciences R&D cloud platform helping the next generation of scientists make breakthrough discoveries&hellip;"
+   },
+   {
+    "name": "Delfi Diagnostics",
+    "logo": "delfi.png",
+    "founded": "2019",
+    "stage": "Partnered at Seed",
+    "partnered": "2019",
+    "about": "Delfi is developing a revolutionary test for early detection of cancer using machine learning on DNA in the blood."
+   },
+   {
+    "name": "Encoded Therapeutics",
+    "logo": "encoded.png",
+    "founded": "2014",
+    "stage": "Partnered at C",
+    "partnered": "2019",
+    "about": "Encoded Therapeutics, a precision gene therapy company, is developing genomics-driven medicines that have the potential&hellip;"
+   },
+   {
+    "name": "Recursion",
+    "logo": "recursion-1.png",
+    "founded": "2013",
+    "stage": "Partnered at B &middot; IPO 2021",
+    "partnered": "2017",
+    "about": "Recursion is discovering transformative new treatments by combining automation, machine learning, and the world\u2019s&hellip;"
+   }
+  ]
+ },
+ "jordan-ormont": {
+  "investments": []
+ },
+ "kirsten-mello": {
+  "investments": []
+ },
+ "houman-haghighi": {
+  "investments": []
+ },
+ "deborah-carrillo": {
+  "investments": []
+ },
+ "h-dubose-montgomery": {
+  "investments": []
+ }
+}

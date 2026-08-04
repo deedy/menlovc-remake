@@ -10,8 +10,14 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 class LocalHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path.split('?')[0] in ('/', '/index.html'):
-            self.path = '/local.html'
+        import os
+        clean = self.path.split('?')[0]
+        if clean.endswith('/index.html'):
+            clean = clean[: -len('index.html')]
+        if clean.endswith('/'):
+            candidate = self.translate_path(clean + 'local.html')
+            if os.path.exists(candidate):
+                self.path = clean + 'local.html'
         return super().do_GET()
 
     def log_message(self, *args):

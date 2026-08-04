@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Menlo Ventures — Portfolio</title>
+<title>Shawn Carolan — Menlo Ventures</title>
 <meta name="description" content="Menlo Ventures. Venture capital since 1976. The team and the companies they back.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Menlo Ventures">
@@ -407,18 +407,183 @@
     .portrait img, .investments img { transition: none; }
   }
 </style>
-</head>
+
+<style>
+  .pnav { text-align: center; padding: 30px 24px 6px; }
+  .pnav img { width: 120px; height: auto; }
+  .profile {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 48px;
+    align-items: center;
+    padding: 24px 24px 20px;
+  }
+  .p-photo {
+    margin-left: -46px;
+    opacity: 0;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.15s forwards;
+  }
+  .p-photo img { width: 100%; height: auto; display: block; }
+  .p-info { opacity: 0; animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.3s forwards; }
+  .p-name {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(34px, 4.4vw, 48px);
+    line-height: 1.05;
+    margin-top: 8px;
+  }
+  .p-blurb {
+    margin-top: 18px;
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(10, 10, 10, 0.78);
+    max-width: 30em;
+  }
+  .p-table-wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 18px 24px 90px;
+    overflow-x: auto;
+    opacity: 0;
+    animation: rise 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0.45s forwards;
+  }
+  .p-table { width: 100%; min-width: 680px; border-collapse: collapse; }
+  .p-table th {
+    font-family: var(--mono);
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--faint);
+    text-align: left;
+    padding: 10px 14px 10px 4px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .p-table td {
+    padding: 16px 14px 16px 4px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: middle;
+  }
+  .p-logo img {
+    display: block;
+    max-height: 22px;
+    max-width: 118px;
+    width: auto;
+    height: auto;
+    filter: brightness(0);
+    opacity: 0.8;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+  .p-table tr:hover .p-logo img { filter: none; opacity: 1; }
+  .p-year { font-family: var(--mono); font-size: 10px; color: var(--faint); white-space: nowrap; }
+  .p-stage { font-family: var(--sans); font-size: 12px; font-weight: 700; white-space: nowrap; }
+  .p-stage .dot { color: var(--accent); }
+  .p-about { font-family: var(--sans); font-size: 12.5px; font-weight: 500; line-height: 1.5; color: rgba(10, 10, 10, 0.62); max-width: 330px; }
+  .p-table tr.more-row.is-hidden { display: none; }
+  .p-val { font-family: var(--sans); font-size: 11.5px; font-weight: 700; letter-spacing: 0.04em; white-space: nowrap; padding-right: 14px; }
+  .p-logo img.raw { filter: grayscale(1); opacity: 0.9; }
+  .p-social { display: flex; gap: 15px; align-items: center; margin-top: 20px; }
+  .p-social a { color: rgba(10, 10, 10, 0.4); display: inline-flex; transition: color 0.3s ease; }
+  .p-social a:hover { color: var(--accent); }
+  @media (max-width: 760px) { .p-social { justify-content: center; } }
+  .p-more { margin-top: 22px; }
+  @media (max-width: 760px) {
+    .profile { grid-template-columns: 1fr; gap: 8px; padding-top: 8px; }
+    .p-photo { margin-left: 0; max-width: 320px; justify-self: center; }
+    .p-info { text-align: center; }
+    .p-blurb { margin-left: auto; margin-right: auto; }
+  }
+</style></head>
 <body>
 
-  <header class="hero">
-    <a href="../" aria-label="Back to home"><img class="wordmark" src="../assets/menlo-logo.png" alt="Menlo Ventures"></a>
-    <p class="eyebrow est">Est. 1976</p>
-    <p class="eyebrow cities">Menlo Park &nbsp;<span class="dot">&middot;</span>&nbsp; San Francisco</p>
-    <p class="byline">We raised <span>~$3B</span> to lead rounds in era-defining startups from Seed to Series&nbsp;D</p>
+  <header class="pnav">
+    <a href="../../" aria-label="Back to home"><img src="../../assets/menlo-logo.png" alt="Menlo Ventures"></a>
   </header>
 
-  <main class="partners" id="portfolio">
-  </main>
+  <section class="profile">
+    <figure class="p-photo">
+      <img src="../../assets/partners/shawn-carolan-hover.jpg" alt="Watercolor portrait of Shawn Carolan">
+    </figure>
+    <div class="p-info">
+      <p class="eyebrow">Managing Partner</p>
+      <h1 class="p-name">Shawn Carolan</h1>
+      <p class="p-blurb">Shawn is an early-stage investor focused on the &ldquo;utilitarian consumer&rdquo; &mdash; better, faster, cheaper ways to move through life. An electrical engineer by training, he has spent two decades at Menlo turning emerging platform shifts into household names.</p>
+      <div class="p-social"><a href="https://www.linkedin.com/in/scarolan/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://twitter.com/shawnvc" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg></a>
+        <a href="mailto:shawn@menlovc.com" aria-label="Email"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></a></div>
+    </div>
+  </section>
+
+
+  <section class="p-table-wrap">
+    <table class="p-table">
+      <thead>
+        <tr><th>Company</th><th>Founded</th><th>Stage</th><th>Partnered</th><th>About</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/monarch-2025.png" alt="Monarch" title="Monarch"></td>
+          <td class="p-year">2018</td>
+          <td class="p-stage">Partnered at A</td>
+          <td class="p-year">2021</td>
+          <td class="p-about">Money management for planning, budgeting, and tracking goals.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/openspace.png" alt="OpenSpace" title="OpenSpace"></td>
+          <td class="p-year">2017</td>
+          <td class="p-stage">Partnered at B</td>
+          <td class="p-year">2020</td>
+          <td class="p-about">360&deg; photo documentation and insights for construction sites.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/chime.svg" alt="Chime" title="Chime"></td>
+          <td class="p-year">2012</td>
+          <td class="p-stage">Led the C <span class="dot">&middot;</span> IPO 2025</td>
+          <td class="p-year">2018</td>
+          <td class="p-about">Fee-free banking that helps members save automatically.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/shipbob-1.png" alt="ShipBob" title="ShipBob"></td>
+          <td class="p-year">2014</td>
+          <td class="p-stage">Partnered at C</td>
+          <td class="p-year">2018</td>
+          <td class="p-about">Fast, affordable e-commerce fulfillment for DTC brands.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/jump_logo.png" alt="JUMP" title="JUMP"></td>
+          <td class="p-year">2010</td>
+          <td class="p-stage">Led the A <span class="dot">&middot;</span> Acq. by Uber</td>
+          <td class="p-year">2017</td>
+          <td class="p-about">JUMP is a dockless scooter and electric bike sharing system.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/uber.png" alt="Uber" title="Uber"></td>
+          <td class="p-year">2009</td>
+          <td class="p-stage">Led the B <span class="dot">&middot;</span> IPO 2019</td>
+          <td class="p-year">2011</td>
+          <td class="p-about">Uber innovates at the intersection of mobile technology, transportation, and logistics.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/roku_logo.png" alt="Roku" title="Roku"></td>
+          <td class="p-year">2002</td>
+          <td class="p-stage">Led the C <span class="dot">&middot;</span> IPO 2017</td>
+          <td class="p-year">2008</td>
+          <td class="p-about">The streaming-TV platform connecting viewers, content, and advertisers.</td>
+        </tr>
+        <tr>
+          <td class="p-logo"><img src="../../assets/logos/siri-1.png" alt="Siri" title="Siri"></td>
+          <td class="p-year">2007</td>
+          <td class="p-stage">Partnered at A <span class="dot">&middot;</span> Acq. by Apple</td>
+          <td class="p-year">2008</td>
+          <td class="p-about">Siri was a voice recognition company spun out of the non-profit institute SRI International.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
 </body>
 </html>

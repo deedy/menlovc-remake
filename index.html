@@ -300,6 +300,12 @@
   body:not(.grid-touched) .partner.managing .portrait img.alt { opacity: 1; }
   body:not(.grid-touched) .partner.managing .role { color: var(--accent); }
 
+  .card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
   .name {
     font-size: 22px;
     font-weight: 400;
@@ -355,6 +361,7 @@
     opacity: 1;
     max-height: 22px;
   }
+  .investments img.raw { filter: grayscale(1); }
 
   /* grid shows 3 columns from ~770px up; center lone cards there */
   @media (min-width: 770px) {
@@ -460,6 +467,22 @@
         <img src="assets/logos/cursor.svg" alt="Cursor" loading="lazy">
         <span class="folio-round">Bought Graphite</span>
       </a></li>
+      <li class="desktop-only"><a href="https://modal.com" target="_blank" rel="noopener">
+        <img src="assets/logos/modal.svg" alt="Modal" loading="lazy">
+        <span class="folio-round">Partnered at C</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://www.skild.ai" target="_blank" rel="noopener">
+        <img src="assets/logos/skild_ai.png" alt="Skild AI" loading="lazy">
+        <span class="folio-round">Partnered at A</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://xaira.com" target="_blank" rel="noopener">
+        <img src="assets/logos/xaira_black.png" alt="Xaira" loading="lazy">
+        <span class="folio-round">Partnered at Seed</span>
+      </a></li>
+      <li class="desktop-only"><a href="https://www.chime.com" target="_blank" rel="noopener">
+        <img src="assets/logos/chime.svg" alt="Chime" loading="lazy">
+        <span class="folio-round">Led the C</span>
+      </a></li>
     </ul>
     <p class="see-portfolio"><a href="portfolio/">
       <span>See entire portfolio</span>
@@ -478,11 +501,11 @@
   <main class="partners" id="partners">
     <div class="grid" data-cat="partners">
       <article class="partner managing" style="--i:0">
-        <figure class="portrait">
+        <a class="card-link" href="team/matt-murphy/"><figure class="portrait">
           <img src="assets/partners/matt-murphy.jpg" alt="Ink line portrait of Matt Murphy" loading="lazy">
           <img class="alt" src="assets/partners/matt-murphy-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Matt Murphy</h2>
+        <h2 class="name">Matt Murphy</h2></a>
         <p class="role">Managing Partner</p>
         <ul class="investments" aria-label="Selected investments of Matt Murphy">
         <li><img src="assets/logos/anthropic.svg" alt="Anthropic" title="Anthropic" loading="lazy"></li>
@@ -494,11 +517,11 @@
         </ul>
       </article>
       <article class="partner managing" style="--i:1">
-        <figure class="portrait">
+        <a class="card-link" href="team/venky-ganesan/"><figure class="portrait">
           <img src="assets/partners/venky-ganesan.jpg" alt="Ink line portrait of Venky Ganesan" loading="lazy">
           <img class="alt" src="assets/partners/venky-ganesan-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Venky Ganesan</h2>
+        <h2 class="name">Venky Ganesan</h2></a>
         <p class="role">Managing Partner</p>
         <ul class="investments" aria-label="Selected investments of Venky Ganesan">
         <li><img src="assets/logos/abnormal_security.svg" alt="Abnormal AI" title="Abnormal AI" loading="lazy"></li>
@@ -510,11 +533,11 @@
         </ul>
       </article>
       <article class="partner managing" style="--i:2">
-        <figure class="portrait">
+        <a class="card-link" href="team/shawn-carolan/"><figure class="portrait">
           <img src="assets/partners/shawn-carolan.jpg" alt="Ink line portrait of Shawn Carolan" loading="lazy">
           <img class="alt" src="assets/partners/shawn-carolan-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Shawn Carolan</h2>
+        <h2 class="name">Shawn Carolan</h2></a>
         <p class="role">Managing Partner</p>
         <ul class="investments" aria-label="Selected investments of Shawn Carolan">
         <li><img src="assets/logos/chime.svg" alt="Chime" title="Chime" loading="lazy"></li>
@@ -526,14 +549,14 @@
         </ul>
       </article>
       <article class="partner" style="--i:3">
-        <figure class="portrait">
+        <a class="card-link" href="team/tim-tully/"><figure class="portrait">
           <img src="assets/partners/tim-tully.jpg" alt="Ink line portrait of Tim Tully" loading="lazy">
           <img class="alt" src="assets/partners/tim-tully-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Tim Tully</h2>
+        <h2 class="name">Tim Tully</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Tim Tully">
-        <li><img src="assets/logos/eve.svg" alt="Eve" title="Eve" loading="lazy"></li>
+        <li><img class="raw" src="assets/logos/eve.svg" alt="Eve" title="Eve" loading="lazy"></li>
         <li><img src="assets/logos/fleet.svg" alt="Fleet AI" title="Fleet AI" loading="lazy"></li>
         <li><img src="assets/logos/gimlet_labs.png" alt="Gimlet Labs" title="Gimlet Labs" loading="lazy"></li>
         <li><img src="assets/logos/inception_labs.png" alt="Inception" title="Inception" loading="lazy"></li>
@@ -542,11 +565,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:4">
-        <figure class="portrait">
+        <a class="card-link" href="team/matt-kraning/"><figure class="portrait">
           <img src="assets/partners/matt-kraning.jpg" alt="Ink line portrait of Matt Kraning" loading="lazy">
           <img class="alt" src="assets/partners/matt-kraning-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Matt Kraning</h2>
+        <h2 class="name">Matt Kraning</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Matt Kraning">
         <li><img src="assets/logos/axiom.svg" alt="Axiom" title="Axiom" loading="lazy"></li>
@@ -558,11 +581,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:5">
-        <figure class="portrait">
+        <a class="card-link" href="team/deedy-das/"><figure class="portrait">
           <img src="assets/partners/deedy-das.jpg" alt="Ink line portrait of Deedy Das" loading="lazy">
           <img class="alt" src="assets/partners/deedy-das-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Deedy Das</h2>
+        <h2 class="name">Deedy Das</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Deedy Das">
         <li><img src="assets/logos/openrouter2026.svg" alt="OpenRouter" title="OpenRouter" loading="lazy"></li>
@@ -574,11 +597,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:6">
-        <figure class="portrait">
+        <a class="card-link" href="team/amy-wu-martin/"><figure class="portrait">
           <img src="assets/partners/amy-wu-martin.jpg" alt="Ink line portrait of Amy Wu Martin" loading="lazy">
           <img class="alt" src="assets/partners/amy-wu-martin-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Amy Wu Martin</h2>
+        <h2 class="name">Amy Wu Martin</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Amy Wu Martin">
         <li><img src="assets/logos/alta.svg" alt="Alta" title="Alta" loading="lazy"></li>
@@ -590,11 +613,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:7">
-        <figure class="portrait">
+        <a class="card-link" href="team/joff-redfern/"><figure class="portrait">
           <img src="assets/partners/joff-redfern.jpg" alt="Ink line portrait of Joff Redfern" loading="lazy">
           <img class="alt" src="assets/partners/joff-redfern-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Joff Redfern</h2>
+        <h2 class="name">Joff Redfern</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Joff Redfern">
         <li><img src="assets/logos/atta.png" alt="Atta" title="Atta" loading="lazy"></li>
@@ -602,15 +625,15 @@
         <li><img src="assets/logos/lovable.svg" alt="Lovable" title="Lovable" loading="lazy"></li>
         <li><img src="assets/logos/mercor.png" alt="Mercor" title="Mercor" loading="lazy"></li>
         <li><img src="assets/logos/okthx.svg" alt="Okthx" title="Okthx" loading="lazy"></li>
-        <li><img src="assets/logos/openhands.svg" alt="OpenHands AI" title="OpenHands AI" loading="lazy"></li>
+        <li><img class="raw" src="assets/logos/openhands.svg" alt="OpenHands AI" title="OpenHands AI" loading="lazy"></li>
         </ul>
       </article>
       <article class="partner" style="--i:8">
-        <figure class="portrait">
+        <a class="card-link" href="team/croom-beatty/"><figure class="portrait">
           <img src="assets/partners/croom-beatty.jpg" alt="Ink line portrait of Croom Beatty" loading="lazy">
           <img class="alt" src="assets/partners/croom-beatty-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Croom Beatty</h2>
+        <h2 class="name">Croom Beatty</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Croom Beatty">
         <li><img src="assets/logos/abacus.png" alt="Abacus" title="Abacus" loading="lazy"></li>
@@ -622,11 +645,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:9">
-        <figure class="portrait">
+        <a class="card-link" href="team/jp-sanday/"><figure class="portrait">
           <img src="assets/partners/jp-sanday.jpg" alt="Ink line portrait of JP Sanday" loading="lazy">
           <img class="alt" src="assets/partners/jp-sanday-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">JP Sanday</h2>
+        <h2 class="name">JP Sanday</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of JP Sanday">
         <li><img src="assets/logos/abnormal_security.svg" alt="Abnormal AI" title="Abnormal AI" loading="lazy"></li>
@@ -638,11 +661,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:10">
-        <figure class="portrait">
+        <a class="card-link" href="team/rama-sekhar/"><figure class="portrait">
           <img src="assets/partners/rama-sekhar.jpg" alt="Ink line portrait of Rama Sekhar" loading="lazy">
           <img class="alt" src="assets/partners/rama-sekhar-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Rama Sekhar</h2>
+        <h2 class="name">Rama Sekhar</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Rama Sekhar">
         <li><img src="assets/logos/astrix.png" alt="Astrix" title="Astrix" loading="lazy"></li>
@@ -654,11 +677,11 @@
         </ul>
       </article>
       <article class="partner" style="--i:11">
-        <figure class="portrait">
+        <a class="card-link" href="team/steve-sloane/"><figure class="portrait">
           <img src="assets/partners/steve-sloane.jpg" alt="Ink line portrait of Steve Sloane" loading="lazy">
           <img class="alt" src="assets/partners/steve-sloane-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Steve Sloane</h2>
+        <h2 class="name">Steve Sloane</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Steve Sloane">
         <li><img src="assets/logos/6_river.png" alt="6 River Systems" title="6 River Systems" loading="lazy"></li>
@@ -670,15 +693,15 @@
         </ul>
       </article>
       <article class="partner" style="--i:12">
-        <figure class="portrait">
+        <a class="card-link" href="team/greg-yap/"><figure class="portrait">
           <img src="assets/partners/greg-yap.jpg" alt="Ink line portrait of Greg Yap" loading="lazy">
           <img class="alt" src="assets/partners/greg-yap-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Greg Yap</h2>
+        <h2 class="name">Greg Yap</h2></a>
         <p class="role">Partner</p>
         <ul class="investments" aria-label="Selected investments of Greg Yap">
         <li><img src="assets/logos/benchling.svg" alt="Benchling" title="Benchling" loading="lazy"></li>
-        <li><img src="assets/logos/cartwheel.png" alt="Cartwheel" title="Cartwheel" loading="lazy"></li>
+        <li><img class="raw" src="assets/logos/cartwheel.png" alt="Cartwheel" title="Cartwheel" loading="lazy"></li>
         <li><img src="assets/logos/delfi.png" alt="Delfi Diagnostics" title="Delfi Diagnostics" loading="lazy"></li>
         <li><img src="assets/logos/encoded.png" alt="Encoded Therapeutics" title="Encoded Therapeutics" loading="lazy"></li>
         <li><img src="assets/logos/genesis_molecular_ai.png" alt="Genesis Molecular AI" title="Genesis Molecular AI" loading="lazy"></li>
@@ -686,43 +709,43 @@
         </ul>
       </article>
       <article class="partner" style="--i:13">
-        <figure class="portrait">
+        <a class="card-link" href="team/jordan-ormont/"><figure class="portrait">
           <img src="assets/partners/jordan-ormont.jpg" alt="Ink line portrait of Jordan Ormont" loading="lazy">
           <img class="alt" src="assets/partners/jordan-ormont-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Jordan Ormont</h2>
+        <h2 class="name">Jordan Ormont</h2></a>
         <p class="role">Partner, Talent</p>
       </article>
       <article class="partner" style="--i:14">
-        <figure class="portrait">
+        <a class="card-link" href="team/kirsten-mello/"><figure class="portrait">
           <img src="assets/partners/kirsten-mello.jpg" alt="Ink line portrait of Kirsten Mello" loading="lazy">
           <img class="alt" src="assets/partners/kirsten-mello-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Kirsten Mello</h2>
+        <h2 class="name">Kirsten Mello</h2></a>
         <p class="role">Partner, CFO</p>
       </article>
       <article class="partner" style="--i:15">
-        <figure class="portrait">
+        <a class="card-link" href="team/houman-haghighi/"><figure class="portrait">
           <img src="assets/partners/houman-haghighi.jpg" alt="Ink line portrait of Houman Haghighi" loading="lazy">
           <img class="alt" src="assets/partners/houman-haghighi-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Houman Haghighi</h2>
+        <h2 class="name">Houman Haghighi</h2></a>
         <p class="role">Partner, Business Development</p>
       </article>
       <article class="partner" style="--i:16">
-        <figure class="portrait">
+        <a class="card-link" href="team/deborah-carrillo/"><figure class="portrait">
           <img src="assets/partners/deborah-carrillo.jpg" alt="Ink line portrait of Deborah Carrillo" loading="lazy">
           <img class="alt" src="assets/partners/deborah-carrillo-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Deborah Carrillo</h2>
+        <h2 class="name">Deborah Carrillo</h2></a>
         <p class="role">Partner, General Counsel</p>
       </article>
       <article class="partner" style="--i:17">
-        <figure class="portrait">
+        <a class="card-link" href="team/h-dubose-montgomery/"><figure class="portrait">
           <img src="assets/partners/h-dubose-montgomery.jpg" alt="Ink line portrait of H. DuBose Montgomery" loading="lazy">
           <img class="alt" src="assets/partners/h-dubose-montgomery-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">H. DuBose Montgomery</h2>
+        <h2 class="name">H. DuBose Montgomery</h2></a>
         <p class="role">Founder &amp; Partner Emeritus</p>
       </article>
     </div>
@@ -786,19 +809,19 @@
     </div>
     <div class="grid center-last is-hidden" data-cat="platform">
       <article class="partner" style="--i:0">
-        <figure class="portrait">
+        <a class="card-link" href="team/jordan-ormont/"><figure class="portrait">
           <img src="assets/partners/jordan-ormont.jpg" alt="Ink line portrait of Jordan Ormont" loading="lazy">
           <img class="alt" src="assets/partners/jordan-ormont-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Jordan Ormont</h2>
+        <h2 class="name">Jordan Ormont</h2></a>
         <p class="role">Partner, Talent</p>
       </article>
       <article class="partner" style="--i:1">
-        <figure class="portrait">
+        <a class="card-link" href="team/houman-haghighi/"><figure class="portrait">
           <img src="assets/partners/houman-haghighi.jpg" alt="Ink line portrait of Houman Haghighi" loading="lazy">
           <img class="alt" src="assets/partners/houman-haghighi-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Houman Haghighi</h2>
+        <h2 class="name">Houman Haghighi</h2></a>
         <p class="role">Partner, Business Development</p>
       </article>
       <article class="partner" style="--i:2">
@@ -844,19 +867,19 @@
     </div>
     <div class="grid is-hidden" data-cat="operations">
       <article class="partner" style="--i:0">
-        <figure class="portrait">
+        <a class="card-link" href="team/kirsten-mello/"><figure class="portrait">
           <img src="assets/partners/kirsten-mello.jpg" alt="Ink line portrait of Kirsten Mello" loading="lazy">
           <img class="alt" src="assets/partners/kirsten-mello-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Kirsten Mello</h2>
+        <h2 class="name">Kirsten Mello</h2></a>
         <p class="role">Partner, CFO</p>
       </article>
       <article class="partner" style="--i:1">
-        <figure class="portrait">
+        <a class="card-link" href="team/deborah-carrillo/"><figure class="portrait">
           <img src="assets/partners/deborah-carrillo.jpg" alt="Ink line portrait of Deborah Carrillo" loading="lazy">
           <img class="alt" src="assets/partners/deborah-carrillo-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">Deborah Carrillo</h2>
+        <h2 class="name">Deborah Carrillo</h2></a>
         <p class="role">Partner, General Counsel</p>
       </article>
       <article class="partner" style="--i:2">
@@ -870,11 +893,11 @@
     </div>
     <div class="grid first-center is-hidden" data-cat="advisors">
       <article class="partner" style="--i:0">
-        <figure class="portrait">
+        <a class="card-link" href="team/h-dubose-montgomery/"><figure class="portrait">
           <img src="assets/partners/h-dubose-montgomery.jpg" alt="Ink line portrait of H. DuBose Montgomery" loading="lazy">
           <img class="alt" src="assets/partners/h-dubose-montgomery-hover.jpg" alt="" aria-hidden="true" loading="lazy">
         </figure>
-        <h2 class="name">H. DuBose Montgomery</h2>
+        <h2 class="name">H. DuBose Montgomery</h2></a>
         <p class="role">Founder &amp; Partner Emeritus</p>
       </article>
       <article class="partner" style="--i:1">
